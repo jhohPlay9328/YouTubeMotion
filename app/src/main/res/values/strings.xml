@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">YoutubePIP</string>
+
+    <string name="watch_btn_thumbs_up">추천</string>
+    <string name="watch_btn_follow">즐겨찾기</string>
+    <string name="watch_btn_gift">선물</string>
+    <string name="watch_btn_commerce">커머스</string>
+    <string name="watch_btn_report">신고</string>
+    <string name="watch_btn_block">차단</string>
+
+    <string name="watch_play_time" formatted="false">%02d:%02d</string>
+    <string name="watch_play_time_all" formatted="false">%s / %s</string>
+
+    <string name="watch_16_9" formatted="false">16:9</string>
+    <string name="watch_9_16" formatted="false">9:16</string>
+</resources>

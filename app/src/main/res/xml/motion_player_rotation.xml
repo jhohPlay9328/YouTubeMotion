@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        android:id="@+id/player_base_to_player_port_rotation"
+        motion:constraintSetStart="@+id/player_base"
+        motion:constraintSetEnd="@+id/player_port_rotation"
+        motion:duration="300"
+        motion:motionInterpolator="linear"
+        motion:layoutDuringTransition="ignoreRequest" >
+
+        <OnSwipe
+            motion:dragDirection="dragUp"
+            motion:touchAnchorId="@id/exo_player_container"
+            motion:touchAnchorSide="middle"
+            motion:onTouchUp="autoCompleteToStart"
+            motion:maxVelocity="@integer/motion_decelerate_velocity"
+            motion:maxAcceleration="@integer/motion_decelerate_acceleration" />
+    </Transition>
+
+    <Transition
+        android:id="@+id/player_base_to_player_land_rotation"
+        motion:constraintSetStart="@+id/player_base"
+        motion:constraintSetEnd="@+id/player_land_rotation"
+        motion:duration="300"
+        motion:motionInterpolator="linear"
+        motion:layoutDuringTransition="ignoreRequest" >
+
+        <OnSwipe
+            motion:dragDirection="dragDown"
+            motion:touchAnchorId="@id/exo_player_container"
+            motion:touchAnchorSide="middle"
+            motion:onTouchUp="autoCompleteToStart"
+            motion:maxVelocity="@integer/motion_decelerate_velocity"
+            motion:maxAcceleration="@integer/motion_decelerate_acceleration" />
+    </Transition>
+
+    <ConstraintSet android:id="@+id/player_base">
+        <Constraint
+            android:id="@+id/exo_player_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/player_port_rotation">
+        <Constraint
+            android:id="@+id/exo_player_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toTopOf="@id/view_divider_rotation"/>
+
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/player_land_rotation">
+        <Constraint
+            android:id="@+id/exo_player_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/view_divider_rotation" />
+
+    </ConstraintSet>
+</MotionScene>

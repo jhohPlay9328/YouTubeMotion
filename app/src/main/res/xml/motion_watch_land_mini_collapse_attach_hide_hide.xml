@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <!--
+    orientation         : land
+    view                : mini
+    player              : collapse
+    bottom(position)    : attach
+    bottom(visible)     : hide
+    menu                : hide
+    close               : X
+    -->
+    <ConstraintSet android:id="@+id/land_mini_collapse_attach_hide_hide">
+        <Constraint
+            android:id="@id/background_dim"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0" >
+
+            <CustomAttribute
+                motion:attributeName="clickable"
+                motion:customBoolean="false" />
+        </Constraint>
+
+        <Constraint
+            android:id="@id/player_touch_area"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            motion:layout_constraintTop_toTopOf="@id/player_container"
+            motion:layout_constraintBottom_toBottomOf="@id/player_container" />
+
+        <Constraint
+            android:id="@id/player_container"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/bottom_navi_height"
+            android:layout_marginBottom="@dimen/bottom_navi_height"
+            motion:layout_constraintDimensionRatio="W,16:9"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toStartOf="@id/player_mini_container"
+            motion:layout_constraintBottom_toBottomOf="parent" />
+
+        <Constraint
+            android:id="@id/player_menu_container"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="invisible"
+            motion:layout_constraintStart_toStartOf="@id/player_container"
+            motion:layout_constraintTop_toTopOf="@id/player_container"
+            motion:layout_constraintEnd_toEndOf="@id/player_container"
+            motion:layout_constraintBottom_toBottomOf="@id/player_container" />
+
+        <Constraint
+            android:id="@id/player_mini_container"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            motion:layout_constraintStart_toEndOf="@id/player_container"
+            motion:layout_constraintTop_toTopOf="@id/player_container"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintBottom_toBottomOf="@id/player_container" />
+
+        <Constraint
+            android:id="@id/information_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintStart_toEndOf="parent"
+            motion:layout_constraintTop_toTopOf="@id/player_mini_container" />
+
+        <Constraint
+            android:id="@id/bottom_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintStart_toEndOf="parent"
+            motion:layout_constraintTop_toTopOf="@id/player_mini_container"  >
+
+            <CustomAttribute
+                motion:attributeName="backgroundColor"
+                motion:customColorValue="@color/COLOR_121318" />
+        </Constraint>
+
+        <Constraint
+            android:id="@id/exo_player_progress"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:maxHeight="2dp"
+            android:minHeight="2dp"
+            motion:layout_constraintBottom_toBottomOf="@id/player_container" >
+
+            <CustomAttribute
+                motion:attributeName="enabled"
+                motion:customBoolean="false" />
+
+            <PropertySet
+                motion:visibilityMode="ignore" />
+        </Constraint>
+    </ConstraintSet>
+</MotionScene>

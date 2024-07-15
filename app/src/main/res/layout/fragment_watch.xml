@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
+
+    <com.jh.oh.play.youtube.pip.ui.watch.WatchMotionLayout
+        android:id="@+id/motion_layout_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:keepScreenOn="true"
+        app:layoutDescription="@xml/motion_watch"
+        app:currentState="@id/port_full_base_attach_show_hide" >
+
+        <!-- 영상 화면을 소형화 되는 과정에서 배경을 dim 처리 하기 위한 Layout -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/background_dim"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="1"
+            android:background="@color/COLOR_121318" />
+
+        <!-- swipe 이벤트의 터치 영역 -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/player_touch_area"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="@id/player_container"
+            app:layout_constraintEnd_toEndOf="@id/player_container"
+            app:layout_constraintStart_toStartOf="@id/player_container"
+            app:layout_constraintTop_toTopOf="@id/player_container" />
+
+        <!-- 영상 화면이 소형화 되었을 때 제목, 닫기 영역을 보여주는 Layout -->
+        <include
+            android:id="@+id/player_mini_container"
+            layout="@layout/layout_watch_player_mini"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="@id/player_container"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/player_container" />
+
+        <!-- 방송자 정보, 방송 정보 등을 나타내는 Layout -->
+        <include
+            android:id="@+id/information_container"
+            layout="@layout/layout_watch_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/player_container" />
+
+        <!-- 영상 화면, 대기 화면, 폴리스 경고 화면 -->
+        <include
+            android:id="@+id/player_container"
+            layout="@layout/layout_watch_player"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintDimensionRatio="H,16:9"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- 영상 화면에 오버레이되어 보여지는 도구 모음 Layout -->
+        <include
+            android:id="@+id/player_menu_container"
+            layout="@layout/layout_watch_player_menu"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@id/player_container"
+            app:layout_constraintEnd_toEndOf="@id/player_container"
+            app:layout_constraintStart_toStartOf="@id/player_container"
+            app:layout_constraintTop_toTopOf="@id/player_container" />
+
+        <!-- 채팅, 다시보기 영상 목록, 댓글 화면이 위치하는 Layout -->
+        <FrameLayout
+            android:id="@+id/bottom_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/player_container" >
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/drag_handler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|top"
+                android:background="?attr/selectableItemBackground"
+                android:padding="8dp"
+                android:src="@drawable/drag_ic" />
+        </FrameLayout>
+
+        <androidx.appcompat.widget.AppCompatSeekBar
+            android:id="@+id/exo_player_progress"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginBottom="-9dp"
+            android:maxHeight="4dp"
+            android:minHeight="4dp"
+            android:paddingStart="0dp"
+            android:paddingEnd="0dp"
+            android:progressDrawable="@drawable/seekbar_player_progress"
+            android:thumb="@drawable/seekbar_player_thumb"
+            android:thumbOffset="0dp"
+            app:layout_constraintBottom_toBottomOf="@id/player_container" />
+    </com.jh.oh.play.youtube.pip.ui.watch.WatchMotionLayout>
+</layout>

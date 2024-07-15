@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="bottom_navi_height">56dp</dimen>
+    <dimen name="watch_bottom_height">260dp</dimen>
+</resources>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+    <FrameLayout
+        android:id="@+id/activity_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_16_9"
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                android:text="@string/watch_16_9"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/btn_9_16"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_9_16"
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                android:text="@string/watch_9_16"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btn_16_9"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.motion.widget.MotionLayout
+            android:id="@+id/motion_layout_root"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layoutDescription="@xml/motion_bottom_menu">
+
+            <FrameLayout
+                android:id="@+id/fl_fragment_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/ll_bottom_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/stroke_color" />
+
+                <com.google.android.material.bottomnavigation.BottomNavigationView
+                    android:id="@+id/bottom_nav_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bottom_navi_height"
+                    android:background="@color/white"
+                    app:elevation="0dp"
+                    app:itemTextColor="@color/black"
+                    app:menu="@menu/menu_bottom_navigation"
+                    app:labelVisibilityMode="labeled" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.constraintlayout.motion.widget.MotionLayout>
+    </FrameLayout>
+</layout>

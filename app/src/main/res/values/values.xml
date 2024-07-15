@@ -1,0 +1,17 @@
+<resources>
+    <integer name="motion_decelerate_velocity">30</integer>
+    <integer name="motion_decelerate_acceleration">15</integer>
+    <integer name="material_motion_duration_full_short">1</integer>
+    <integer name="motion_portrait_frame_position">90</integer>
+    <integer name="motion_portrait_percent_width">0</integer>
+    <integer name="motion_portrait_percent_x">0</integer>
+    <integer name="motion_portrait_percent_y">1</integer>
+    <integer name="motion_landscape_frame_position">50</integer>
+    <integer name="motion_landscape_percent_height">0</integer>
+    <integer name="motion_landscape_percent_y">0</integer>
+
+    <integer name="entrance_animation_duration">100</integer>
+
+    <integer name="watch_landscape_player_weight">6</integer>
+    <integer name="watch_landscape_bottom_weight">4</integer>
+</resources>

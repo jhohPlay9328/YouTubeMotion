@@ -1,0 +1,3734 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+    <!--*****************************************************************************************-->
+    <!-- 화면 회전 Transition Start **************************************************************-->
+    <!--*****************************************************************************************-->
+    <!--
+    orientation         : port <-> land
+    view                : full
+    player              : base
+    bottom(position)    : attach
+    bottom(visible)     : show
+    menu                : hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_base_attach_show_hide_to_land_full_base_attach_show_hide"
+        motion:constraintSetStart="@id/port_full_base_attach_show_hide"
+        motion:constraintSetEnd="@id/land_full_base_attach_show_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_full_short"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : port <-> land
+    view                : full
+    player              : base
+    bottom(position)    : attach
+    bottom(visible)     : show
+    menu                : show
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_base_attach_show_show_to_land_full_base_attach_show_show"
+        motion:constraintSetStart="@id/port_full_base_attach_show_show"
+        motion:constraintSetEnd="@id/land_full_base_attach_show_show"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_full_short"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : port <-> land
+    view                : full
+    player              : base
+    bottom(position)    : attach
+    bottom(visible)     : hide
+    menu                : hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_base_attach_hide_hide_to_land_full_base_attach_hide_hide"
+        motion:constraintSetStart="@id/port_full_base_attach_hide_hide"
+        motion:constraintSetEnd="@id/land_full_base_attach_hide_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_full_short"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : port <-> land
+    view                : full
+    player              : base
+    bottom(position)    : attach
+    bottom(visible)     : hide
+    menu                : show
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_base_attach_hide_show_to_land_full_base_attach_hide_show"
+        motion:constraintSetStart="@id/port_full_base_attach_hide_show"
+        motion:constraintSetEnd="@id/land_full_base_attach_hide_show"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_full_short"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : port <-> land
+    view                : full
+    player              : base
+    bottom(position)    : overlay
+    bottom(visible)     : show
+    menu                : hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_base_overlay_show_hide_to_land_full_base_overlay_show_hide"
+        motion:constraintSetStart="@id/port_full_base_overlay_show_hide"
+        motion:constraintSetEnd="@id/land_full_base_overlay_show_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_full_short"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : port <-> land
+    view                : full
+    player              : base
+    bottom(position)    : overlay
+    bottom(visible)     : show
+    menu                : show
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_base_overlay_show_show_to_land_full_base_overlay_show_show"
+        motion:constraintSetStart="@id/port_full_base_overlay_show_show"
+        motion:constraintSetEnd="@id/land_full_base_overlay_show_show"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_full_short"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : port <-> land
+    view                : full
+    player              : base
+    bottom(position)    : overlay
+    bottom(visible)     : hide
+    menu                : hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_base_overlay_hide_hide_to_land_full_base_overlay_hide_hide"
+        motion:constraintSetStart="@id/port_full_base_overlay_hide_hide"
+        motion:constraintSetEnd="@id/land_full_base_overlay_hide_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_full_short"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : port <-> land
+    view                : full
+    player              : base
+    bottom(position)    : overlay
+    bottom(visible)     : hide
+    menu                : show
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_base_overlay_hide_show_to_land_full_base_overlay_hide_show"
+        motion:constraintSetStart="@id/port_full_base_overlay_hide_show"
+        motion:constraintSetEnd="@id/land_full_base_overlay_hide_show"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_full_short"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : port <-> land
+    view                : full
+    player              : collapse
+    bottom(position)    : attach
+    bottom(visible)     : show
+    menu                : hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_collapse_attach_show_hide_to_land_full_collapse_attach_show_hide"
+        motion:constraintSetStart="@id/port_full_collapse_attach_show_hide"
+        motion:constraintSetEnd="@id/land_full_collapse_attach_show_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_full_short"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : port <-> land
+    view                : full
+    player              : collapse
+    bottom(position)    : attach
+    bottom(visible)     : show
+    menu                : show
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_collapse_attach_show_show_to_land_full_collapse_attach_show_show"
+        motion:constraintSetStart="@id/port_full_collapse_attach_show_show"
+        motion:constraintSetEnd="@id/land_full_collapse_attach_show_show"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_full_short"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : port <-> land
+    view                : full
+    player              : collapse
+    bottom(position)    : attach
+    bottom(visible)     : hide
+    menu                : hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_collapse_attach_hide_hide_to_land_full_collapse_attach_hide_hide"
+        motion:constraintSetStart="@id/port_full_collapse_attach_hide_hide"
+        motion:constraintSetEnd="@id/land_full_collapse_attach_hide_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_full_short"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : port <-> land
+    view                : full
+    player              : collapse
+    bottom(position)    : attach
+    bottom(visible)     : hide
+    menu                : show
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_collapse_attach_hide_show_to_land_full_collapse_attach_hide_show"
+        motion:constraintSetStart="@id/port_full_collapse_attach_hide_show"
+        motion:constraintSetEnd="@id/land_full_collapse_attach_hide_show"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_full_short"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : port <-> land
+    view                : full
+    player              : collapse
+    bottom(position)    : overlay
+    bottom(visible)     : show
+    menu                : hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_collapse_overlay_show_hide_to_land_full_collapse_overlay_show_hide"
+        motion:constraintSetStart="@id/port_full_collapse_overlay_show_hide"
+        motion:constraintSetEnd="@id/land_full_collapse_overlay_show_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_full_short"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : port <-> land
+    view                : full
+    player              : collapse
+    bottom(position)    : overlay
+    bottom(visible)     : show
+    menu                : show
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_collapse_overlay_show_show_to_land_full_collapse_overlay_show_show"
+        motion:constraintSetStart="@id/port_full_collapse_overlay_show_show"
+        motion:constraintSetEnd="@id/land_full_collapse_overlay_show_show"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_full_short"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : port <-> land
+    view                : full
+    player              : collapse
+    bottom(position)    : overlay
+    bottom(visible)     : hide
+    menu                : hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_collapse_overlay_hide_hide_to_land_full_collapse_overlay_hide_hide"
+        motion:constraintSetStart="@id/port_full_collapse_overlay_hide_hide"
+        motion:constraintSetEnd="@id/land_full_collapse_overlay_hide_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_full_short"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : port <-> land
+    view                : full
+    player              : collapse
+    bottom(position)    : overlay
+    bottom(visible)     : hide
+    menu                : show
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_collapse_overlay_hide_show_to_land_full_collapse_overlay_hide_show"
+        motion:constraintSetStart="@id/port_full_collapse_overlay_hide_show"
+        motion:constraintSetEnd="@id/land_full_collapse_overlay_hide_show"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_full_short"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : port <-> land
+    view                : full
+    player              : expand
+    bottom(position)    : attach
+    bottom(visible)     : show
+    menu                : hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_expand_attach_show_hide_to_land_full_expand_attach_show_hide"
+        motion:constraintSetStart="@id/port_full_expand_attach_show_hide"
+        motion:constraintSetEnd="@id/land_full_expand_attach_show_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_full_short"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : port <-> land
+    view                : full
+    player              : expand
+    bottom(position)    : attach
+    bottom(visible)     : show
+    menu                : show
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_expand_attach_show_show_to_land_full_expand_attach_show_show"
+        motion:constraintSetStart="@id/port_full_expand_attach_show_show"
+        motion:constraintSetEnd="@id/land_full_expand_attach_show_show"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_full_short"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : port <-> land
+    view                : full
+    player              : expand
+    bottom(position)    : attach
+    bottom(visible)     : hide
+    menu                : hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_expand_attach_hide_hide_to_land_full_expand_attach_hide_hide"
+        motion:constraintSetStart="@id/port_full_expand_attach_hide_hide"
+        motion:constraintSetEnd="@id/land_full_expand_attach_hide_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_full_short"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : port <-> land
+    view                : full
+    player              : expand
+    bottom(position)    : attach
+    bottom(visible)     : hide
+    menu                : show
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_expand_attach_hide_show_to_land_full_expand_attach_hide_show"
+        motion:constraintSetStart="@id/port_full_expand_attach_hide_show"
+        motion:constraintSetEnd="@id/land_full_expand_attach_hide_show"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_full_short"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : port <-> land
+    view                : full
+    player              : expand
+    bottom(position)    : overlay
+    bottom(visible)     : show
+    menu                : hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_expand_overlay_show_hide_to_land_full_expand_overlay_show_hide"
+        motion:constraintSetStart="@id/port_full_expand_overlay_show_hide"
+        motion:constraintSetEnd="@id/land_full_expand_overlay_show_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_full_short"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : port <-> land
+    view                : full
+    player              : expand
+    bottom(position)    : overlay
+    bottom(visible)     : show
+    menu                : show
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_expand_overlay_show_show_to_land_full_expand_overlay_show_show"
+        motion:constraintSetStart="@id/port_full_expand_overlay_show_show"
+        motion:constraintSetEnd="@id/land_full_expand_overlay_show_show"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_full_short"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : port <-> land
+    view                : full
+    player              : expand
+    bottom(position)    : overlay
+    bottom(visible)     : hide
+    menu                : hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_expand_overlay_hide_hide_to_land_full_expand_overlay_hide_hide"
+        motion:constraintSetStart="@id/port_full_expand_overlay_hide_hide"
+        motion:constraintSetEnd="@id/land_full_expand_overlay_hide_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_full_short"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : port <-> land
+    view                : full
+    player              : expand
+    bottom(position)    : overlay
+    bottom(visible)     : hide
+    menu                : show
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_expand_overlay_hide_show_to_land_full_expand_overlay_hide_show"
+        motion:constraintSetStart="@id/port_full_expand_overlay_hide_show"
+        motion:constraintSetEnd="@id/land_full_expand_overlay_hide_show"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_full_short"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : port <-> land
+    view                : mini
+    player              : base
+    bottom(position)    : attach
+    bottom(visible)     : show
+    menu                : hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_mini_base_attach_show_hide_to_land_mini_base_attach_show_hide"
+        motion:constraintSetStart="@id/port_mini_base_attach_show_hide"
+        motion:constraintSetEnd="@id/land_mini_base_attach_show_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_full_short"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : port <-> land
+    view                : mini
+    player              : base
+    bottom(position)    : attach
+    bottom(visible)     : hide
+    menu                : hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_mini_base_attach_hide_hide_to_land_mini_base_attach_hide_hide"
+        motion:constraintSetStart="@id/port_mini_base_attach_hide_hide"
+        motion:constraintSetEnd="@id/land_mini_base_attach_hide_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_full_short"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : port <-> land
+    view                : mini
+    player              : base
+    bottom(position)    : overlay
+    bottom(visible)     : show
+    menu                : hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_mini_base_overlay_show_hide_to_land_mini_base_overlay_show_hide"
+        motion:constraintSetStart="@id/port_mini_base_overlay_show_hide"
+        motion:constraintSetEnd="@id/land_mini_base_overlay_show_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_full_short"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : port <-> land
+    view                : mini
+    player              : base
+    bottom(position)    : overlay
+    bottom(visible)     : hide
+    menu                : hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_mini_base_overlay_hide_hide_to_land_mini_base_overlay_hide_hide"
+        motion:constraintSetStart="@id/port_mini_base_overlay_hide_hide"
+        motion:constraintSetEnd="@id/land_mini_base_overlay_hide_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_full_short"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : port <-> land
+    view                : mini
+    player              : collapse
+    bottom(position)    : attach
+    bottom(visible)     : show
+    menu                : hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_mini_collapse_attach_show_hide_to_land_mini_collapse_attach_show_hide"
+        motion:constraintSetStart="@id/port_mini_collapse_attach_show_hide"
+        motion:constraintSetEnd="@id/land_mini_collapse_attach_show_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_full_short"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : port <-> land
+    view                : mini
+    player              : collapse
+    bottom(position)    : attach
+    bottom(visible)     : hide
+    menu                : hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_mini_collapse_attach_hide_hide_to_land_mini_collapse_attach_hide_hide"
+        motion:constraintSetStart="@id/port_mini_collapse_attach_hide_hide"
+        motion:constraintSetEnd="@id/land_mini_collapse_attach_hide_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_full_short"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : port <-> land
+    view                : mini
+    player              : collapse
+    bottom(position)    : overlay
+    bottom(visible)     : show
+    menu                : hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_mini_collapse_overlay_show_hide_to_land_mini_collapse_overlay_show_hide"
+        motion:constraintSetStart="@id/port_mini_collapse_overlay_show_hide"
+        motion:constraintSetEnd="@id/land_mini_collapse_overlay_show_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_full_short"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : port <-> land
+    view                : mini
+    player              : collapse
+    bottom(position)    : overlay
+    bottom(visible)     : hide
+    menu                : hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_mini_collapse_overlay_hide_hide_to_land_mini_collapse_overlay_hide_hide"
+        motion:constraintSetStart="@id/port_mini_collapse_overlay_hide_hide"
+        motion:constraintSetEnd="@id/land_mini_collapse_overlay_hide_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_full_short"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : port <-> land
+    view                : mini
+    player              : expand
+    bottom(position)    : attach
+    bottom(visible)     : show
+    menu                : hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_mini_expand_attach_show_hide_to_land_mini_expand_attach_show_hide"
+        motion:constraintSetStart="@id/port_mini_expand_attach_show_hide"
+        motion:constraintSetEnd="@id/land_mini_expand_attach_show_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_full_short"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : port <-> land
+    view                : mini
+    player              : expand
+    bottom(position)    : attach
+    bottom(visible)     : hide
+    menu                : hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_mini_expand_attach_hide_hide_to_land_mini_expand_attach_hide_hide"
+        motion:constraintSetStart="@id/port_mini_expand_attach_hide_hide"
+        motion:constraintSetEnd="@id/land_mini_expand_attach_hide_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_full_short"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : port <-> land
+    view                : mini
+    player              : expand
+    bottom(position)    : overlay
+    bottom(visible)     : show
+    menu                : hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_mini_expand_overlay_show_hide_to_land_mini_expand_overlay_show_hide"
+        motion:constraintSetStart="@id/port_mini_expand_overlay_show_hide"
+        motion:constraintSetEnd="@id/land_mini_expand_overlay_show_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_full_short"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : port <-> land
+    view                : mini
+    player              : expand
+    bottom(position)    : overlay
+    bottom(visible)     : hide
+    menu                : hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_mini_expand_overlay_hide_hide_to_land_mini_expand_overlay_hide_hide"
+        motion:constraintSetStart="@id/port_mini_expand_overlay_hide_hide"
+        motion:constraintSetEnd="@id/land_mini_expand_overlay_hide_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_full_short"
+        motion:motionInterpolator="linear" />
+    <!--*****************************************************************************************-->
+    <!-- 화면 회전 Transition End ****************************************************************-->
+    <!--*****************************************************************************************-->
+
+    <!--*****************************************************************************************-->
+    <!-- 오버레이 메뉴 show/hide Transition Start *************************************************-->
+    <!--*****************************************************************************************-->
+    <!--
+    orientation         : port
+    view                : full
+    player              : base
+    bottom(position)    : attach
+    bottom(visible)     : show
+    menu                : hide <-> show
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_base_attach_show_hide_to_port_full_base_attach_show_show"
+        motion:constraintSetStart="@id/port_full_base_attach_show_hide"
+        motion:constraintSetEnd="@id/port_full_base_attach_show_show"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : port
+    view                : full
+    player              : base
+    bottom(position)    : attach
+    bottom(visible)     : hide
+    menu                : hide <-> show
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_base_attach_hide_hide_to_port_full_base_attach_hide_show"
+        motion:constraintSetStart="@id/port_full_base_attach_hide_hide"
+        motion:constraintSetEnd="@id/port_full_base_attach_hide_show"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : port
+    view                : full
+    player              : base
+    bottom(position)    : overlay
+    bottom(visible)     : show
+    menu                : hide <-> show
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_base_overlay_show_hide_to_port_full_base_overlay_show_show"
+        motion:constraintSetStart="@id/port_full_base_overlay_show_hide"
+        motion:constraintSetEnd="@id/port_full_base_overlay_show_show"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : port
+    view                : full
+    player              : base
+    bottom(position)    : overlay
+    bottom(visible)     : hide
+    menu                : hide <-> show
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_base_overlay_hide_hide_to_port_full_base_overlay_hide_show"
+        motion:constraintSetStart="@id/port_full_base_overlay_hide_hide"
+        motion:constraintSetEnd="@id/port_full_base_overlay_hide_show"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : port
+    view                : full
+    player              : collapse
+    bottom(position)    : attach
+    bottom(visible)     : show
+    menu                : hide <-> show
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_collapse_attach_show_hide_to_port_full_collapse_attach_show_show"
+        motion:constraintSetStart="@id/port_full_collapse_attach_show_hide"
+        motion:constraintSetEnd="@id/port_full_collapse_attach_show_show"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : port
+    view                : full
+    player              : collapse
+    bottom(position)    : attach
+    bottom(visible)     : hide
+    menu                : hide <-> show
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_collapse_attach_hide_hide_to_port_full_collapse_attach_hide_show"
+        motion:constraintSetStart="@id/port_full_collapse_attach_hide_hide"
+        motion:constraintSetEnd="@id/port_full_collapse_attach_hide_show"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : port
+    view                : full
+    player              : collapse
+    bottom(position)    : overlay
+    bottom(visible)     : show
+    menu                : hide <-> show
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_collapse_overlay_show_hide_to_port_full_collapse_overlay_show_show"
+        motion:constraintSetStart="@id/port_full_collapse_overlay_show_hide"
+        motion:constraintSetEnd="@id/port_full_collapse_overlay_show_show"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : port
+    view                : full
+    player              : collapse
+    bottom(position)    : overlay
+    bottom(visible)     : hide
+    menu                : hide <-> show
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_collapse_overlay_hide_hide_to_port_full_collapse_overlay_hide_show"
+        motion:constraintSetStart="@id/port_full_collapse_overlay_hide_hide"
+        motion:constraintSetEnd="@id/port_full_collapse_overlay_hide_show"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : port
+    view                : full
+    player              : expand
+    bottom(position)    : attach
+    bottom(visible)     : show
+    menu                : hide <-> show
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_expand_attach_show_hide_to_port_full_expand_attach_show_show"
+        motion:constraintSetStart="@id/port_full_expand_attach_show_hide"
+        motion:constraintSetEnd="@id/port_full_expand_attach_show_show"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : port
+    view                : full
+    player              : expand
+    bottom(position)    : attach
+    bottom(visible)     : hide
+    menu                : hide <-> show
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_expand_attach_hide_hide_to_port_full_expand_attach_hide_show"
+        motion:constraintSetStart="@id/port_full_expand_attach_hide_hide"
+        motion:constraintSetEnd="@id/port_full_expand_attach_hide_show"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : port
+    view                : full
+    player              : expand
+    bottom(position)    : overlay
+    bottom(visible)     : show
+    menu                : hide <-> show
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_expand_overlay_show_hide_to_port_full_expand_overlay_show_show"
+        motion:constraintSetStart="@id/port_full_expand_overlay_show_hide"
+        motion:constraintSetEnd="@id/port_full_expand_overlay_show_show"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : port
+    view                : full
+    player              : expand
+    bottom(position)    : overlay
+    bottom(visible)     : hide
+    menu                : hide <-> show
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_expand_overlay_hide_hide_to_port_full_expand_overlay_hide_show"
+        motion:constraintSetStart="@id/port_full_expand_overlay_hide_hide"
+        motion:constraintSetEnd="@id/port_full_expand_overlay_hide_show"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" />
+    <!--
+     orientation         : land
+     view                : full
+     player              : base
+     bottom(position)    : attach
+     bottom(visible)     : show
+     menu                : hide <-> show
+     close               : X
+     -->
+    <Transition
+        android:id="@+id/land_full_base_attach_show_hide_to_land_full_base_attach_show_show"
+        motion:constraintSetStart="@id/land_full_base_attach_show_hide"
+        motion:constraintSetEnd="@id/land_full_base_attach_show_show"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : land
+    view                : full
+    player              : base
+    bottom(position)    : attach
+    bottom(visible)     : hide
+    menu                : hide <-> show
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/land_full_base_attach_hide_hide_to_land_full_base_attach_hide_show"
+        motion:constraintSetStart="@id/land_full_base_attach_hide_hide"
+        motion:constraintSetEnd="@id/land_full_base_attach_hide_show"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : land
+    view                : full
+    player              : base
+    bottom(position)    : overlay
+    bottom(visible)     : show
+    menu                : hide <-> show
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/land_full_base_overlay_show_hide_to_land_full_base_overlay_show_show"
+        motion:constraintSetStart="@id/land_full_base_overlay_show_hide"
+        motion:constraintSetEnd="@id/land_full_base_overlay_show_show"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : land
+    view                : full
+    player              : base
+    bottom(position)    : overlay
+    bottom(visible)     : hide
+    menu                : hide <-> show
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/land_full_base_overlay_hide_hide_to_land_full_base_overlay_hide_show"
+        motion:constraintSetStart="@id/land_full_base_overlay_hide_hide"
+        motion:constraintSetEnd="@id/land_full_base_overlay_hide_show"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : land
+    view                : full
+    player              : collapse
+    bottom(position)    : attach
+    bottom(visible)     : show
+    menu                : hide <-> show
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/land_full_collapse_attach_show_hide_to_land_full_collapse_attach_show_show"
+        motion:constraintSetStart="@id/land_full_collapse_attach_show_hide"
+        motion:constraintSetEnd="@id/land_full_collapse_attach_show_show"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : land
+    view                : full
+    player              : collapse
+    bottom(position)    : attach
+    bottom(visible)     : hide
+    menu                : hide <-> show
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/land_full_collapse_attach_hide_hide_to_land_full_collapse_attach_hide_show"
+        motion:constraintSetStart="@id/land_full_collapse_attach_hide_hide"
+        motion:constraintSetEnd="@id/land_full_collapse_attach_hide_show"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : land
+    view                : full
+    player              : collapse
+    bottom(position)    : overlay
+    bottom(visible)     : show
+    menu                : hide <-> show
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/land_full_collapse_overlay_show_hide_to_land_full_collapse_overlay_show_show"
+        motion:constraintSetStart="@id/land_full_collapse_overlay_show_hide"
+        motion:constraintSetEnd="@id/land_full_collapse_overlay_show_show"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : land
+    view                : full
+    player              : collapse
+    bottom(position)    : overlay
+    bottom(visible)     : hide
+    menu                : hide <-> show
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/land_full_collapse_overlay_hide_hide_to_land_full_collapse_overlay_hide_show"
+        motion:constraintSetStart="@id/land_full_collapse_overlay_hide_hide"
+        motion:constraintSetEnd="@id/land_full_collapse_overlay_hide_show"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : land
+    view                : full
+    player              : expand
+    bottom(position)    : attach
+    bottom(visible)     : show
+    menu                : hide <-> show
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/land_full_expand_attach_show_hide_to_land_full_expand_attach_show_show"
+        motion:constraintSetStart="@id/land_full_expand_attach_show_hide"
+        motion:constraintSetEnd="@id/land_full_expand_attach_show_show"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : land
+    view                : full
+    player              : expand
+    bottom(position)    : attach
+    bottom(visible)     : hide
+    menu                : hide <-> show
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/land_full_expand_attach_hide_hide_to_land_full_expand_attach_hide_show"
+        motion:constraintSetStart="@id/land_full_expand_attach_hide_hide"
+        motion:constraintSetEnd="@id/land_full_expand_attach_hide_show"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : land
+    view                : full
+    player              : expand
+    bottom(position)    : overlay
+    bottom(visible)     : show
+    menu                : hide <-> show
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/land_full_expand_overlay_show_hide_to_land_full_expand_overlay_show_show"
+        motion:constraintSetStart="@id/land_full_expand_overlay_show_hide"
+        motion:constraintSetEnd="@id/land_full_expand_overlay_show_show"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : land
+    view                : full
+    player              : expand
+    bottom(position)    : overlay
+    bottom(visible)     : hide
+    menu                : hide <-> show
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/land_full_expand_overlay_hide_hide_to_land_full_expand_overlay_hide_show"
+        motion:constraintSetStart="@id/land_full_expand_overlay_hide_hide"
+        motion:constraintSetEnd="@id/land_full_expand_overlay_hide_show"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" />
+    <!--*****************************************************************************************-->
+    <!-- 오버레이 메뉴 show/hide Transition end ***************************************************-->
+    <!--*****************************************************************************************-->
+
+    <!--*****************************************************************************************-->
+    <!-- 하단 영역 attach/overlay Transition Start ***********************************************-->
+    <!--*****************************************************************************************-->
+    <!--
+    orientation         : port
+    view                : full
+    player              : base
+    bottom(position)    : attach <-> overlay
+    bottom(visible)     : show
+    menu                : hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_base_attach_show_hide_to_port_full_base_overlay_show_hide"
+        motion:constraintSetStart="@id/port_full_base_attach_show_hide"
+        motion:constraintSetEnd="@id/port_full_base_overlay_show_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : port
+    view                : full
+    player              : base
+    bottom(position)    : attach <-> overlay
+    bottom(visible)     : show
+    menu                : show
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_base_attach_show_show_to_port_full_base_overlay_show_show"
+        motion:constraintSetStart="@id/port_full_base_attach_show_show"
+        motion:constraintSetEnd="@id/port_full_base_overlay_show_show"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : port
+    view                : full
+    player              : base
+    bottom(position)    : attach <-> overlay
+    bottom(visible)     : hide
+    menu                : hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_base_attach_hide_hide_to_port_full_base_overlay_hide_hide"
+        motion:constraintSetStart="@id/port_full_base_attach_hide_hide"
+        motion:constraintSetEnd="@id/port_full_base_overlay_hide_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : port
+    view                : full
+    player              : base
+    bottom(position)    : attach <-> overlay
+    bottom(visible)     : hide
+    menu                : show
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_base_attach_hide_show_to_port_full_base_overlay_hide_show"
+        motion:constraintSetStart="@id/port_full_base_attach_hide_show"
+        motion:constraintSetEnd="@id/port_full_base_overlay_hide_show"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : port
+    view                : full
+    player              : collapse
+    bottom(position)    : attach <-> overlay
+    bottom(visible)     : show
+    menu                : hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_collapse_attach_show_hide_to_port_full_collapse_overlay_show_hide"
+        motion:constraintSetStart="@id/port_full_collapse_attach_show_hide"
+        motion:constraintSetEnd="@id/port_full_collapse_overlay_show_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : port
+    view                : full
+    player              : collapse
+    bottom(position)    : attach <-> overlay
+    bottom(visible)     : show
+    menu                : show
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_collapse_attach_show_show_to_port_full_collapse_overlay_show_show"
+        motion:constraintSetStart="@id/port_full_collapse_attach_show_show"
+        motion:constraintSetEnd="@id/port_full_collapse_overlay_show_show"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : port
+    view                : full
+    player              : collapse
+    bottom(position)    : attach <-> overlay
+    bottom(visible)     : hide
+    menu                : hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_collapse_attach_hide_hide_to_port_full_collapse_overlay_hide_hide"
+        motion:constraintSetStart="@id/port_full_collapse_attach_hide_hide"
+        motion:constraintSetEnd="@id/port_full_collapse_overlay_hide_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : port
+    view                : full
+    player              : collapse
+    bottom(position)    : attach <-> overlay
+    bottom(visible)     : hide
+    menu                : show
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_collapse_attach_hide_show_to_port_full_collapse_overlay_hide_show"
+        motion:constraintSetStart="@id/port_full_collapse_attach_hide_show"
+        motion:constraintSetEnd="@id/port_full_collapse_overlay_hide_show"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : port
+    view                : full
+    player              : expand
+    bottom(position)    : attach <-> overlay
+    bottom(visible)     : show
+    menu                : hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_expand_attach_show_hide_to_port_full_expand_overlay_show_hide"
+        motion:constraintSetStart="@id/port_full_expand_attach_show_hide"
+        motion:constraintSetEnd="@id/port_full_expand_overlay_show_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : port
+    view                : full
+    player              : expand
+    bottom(position)    : attach <-> overlay
+    bottom(visible)     : show
+    menu                : show
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_expand_attach_show_show_to_port_full_expand_overlay_show_show"
+        motion:constraintSetStart="@id/port_full_expand_attach_show_show"
+        motion:constraintSetEnd="@id/port_full_expand_overlay_show_show"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : port
+    view                : full
+    player              : expand
+    bottom(position)    : attach <-> overlay
+    bottom(visible)     : hide
+    menu                : hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_expand_attach_hide_hide_to_port_full_expand_overlay_hide_hide"
+        motion:constraintSetStart="@id/port_full_expand_attach_hide_hide"
+        motion:constraintSetEnd="@id/port_full_expand_overlay_hide_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : port
+    view                : full
+    player              : expand
+    bottom(position)    : attach <-> overlay
+    bottom(visible)     : hide
+    menu                : show
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_expand_attach_hide_show_to_port_full_expand_overlay_hide_show"
+        motion:constraintSetStart="@id/port_full_expand_attach_hide_show"
+        motion:constraintSetEnd="@id/port_full_expand_overlay_hide_show"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" />
+
+    <!--
+    orientation         : land
+    view                : full
+    player              : base
+    bottom(position)    : attach <-> overlay
+    bottom(visible)     : show
+    menu                : hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/land_full_base_attach_show_hide_to_land_full_base_overlay_show_hide"
+        motion:constraintSetStart="@id/land_full_base_attach_show_hide"
+        motion:constraintSetEnd="@id/land_full_base_overlay_show_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : land
+    view                : full
+    player              : base
+    bottom(position)    : attach <-> overlay
+    bottom(visible)     : show
+    menu                : show
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/land_full_base_attach_show_show_to_land_full_base_overlay_show_show"
+        motion:constraintSetStart="@id/land_full_base_attach_show_show"
+        motion:constraintSetEnd="@id/land_full_base_overlay_show_show"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : land
+    view                : full
+    player              : base
+    bottom(position)    : attach <-> overlay
+    bottom(visible)     : hide
+    menu                : hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/land_full_base_attach_hide_hide_to_land_full_base_overlay_hide_hide"
+        motion:constraintSetStart="@id/land_full_base_attach_hide_hide"
+        motion:constraintSetEnd="@id/land_full_base_overlay_hide_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : land
+    view                : full
+    player              : base
+    bottom(position)    : attach <-> overlay
+    bottom(visible)     : hide
+    menu                : show
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/land_full_base_attach_hide_show_to_land_full_base_overlay_hide_show"
+        motion:constraintSetStart="@id/land_full_base_attach_hide_show"
+        motion:constraintSetEnd="@id/land_full_base_overlay_hide_show"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : land
+    view                : full
+    player              : collapse
+    bottom(position)    : attach <-> overlay
+    bottom(visible)     : show
+    menu                : hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/land_full_collapse_attach_show_hide_to_land_full_collapse_overlay_show_hide"
+        motion:constraintSetStart="@id/land_full_collapse_attach_show_hide"
+        motion:constraintSetEnd="@id/land_full_collapse_overlay_show_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : land
+    view                : full
+    player              : collapse
+    bottom(position)    : attach <-> overlay
+    bottom(visible)     : show
+    menu                : show
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/land_full_collapse_attach_show_show_to_land_full_collapse_overlay_show_show"
+        motion:constraintSetStart="@id/land_full_collapse_attach_show_show"
+        motion:constraintSetEnd="@id/land_full_collapse_overlay_show_show"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : land
+    view                : full
+    player              : collapse
+    bottom(position)    : attach <-> overlay
+    bottom(visible)     : hide
+    menu                : hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/land_full_collapse_attach_hide_hide_to_land_full_collapse_overlay_hide_hide"
+        motion:constraintSetStart="@id/land_full_collapse_attach_hide_hide"
+        motion:constraintSetEnd="@id/land_full_collapse_overlay_hide_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : land
+    view                : full
+    player              : collapse
+    bottom(position)    : attach <-> overlay
+    bottom(visible)     : hide
+    menu                : show
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/land_full_collapse_attach_hide_show_to_land_full_collapse_overlay_hide_show"
+        motion:constraintSetStart="@id/land_full_collapse_attach_hide_show"
+        motion:constraintSetEnd="@id/land_full_collapse_overlay_hide_show"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : land
+    view                : full
+    player              : expand
+    bottom(position)    : attach <-> overlay
+    bottom(visible)     : show
+    menu                : hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/land_full_expand_attach_show_hide_to_land_full_expand_overlay_show_hide"
+        motion:constraintSetStart="@id/land_full_expand_attach_show_hide"
+        motion:constraintSetEnd="@id/land_full_expand_overlay_show_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : land
+    view                : full
+    player              : expand
+    bottom(position)    : attach <-> overlay
+    bottom(visible)     : show
+    menu                : show
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/land_full_expand_attach_show_show_to_land_full_expand_overlay_show_show"
+        motion:constraintSetStart="@id/land_full_expand_attach_show_show"
+        motion:constraintSetEnd="@id/land_full_expand_overlay_show_show"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : land
+    view                : full
+    player              : expand
+    bottom(position)    : attach <-> overlay
+    bottom(visible)     : hide
+    menu                : hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/land_full_expand_attach_hide_hide_to_land_full_expand_overlay_hide_hide"
+        motion:constraintSetStart="@id/land_full_expand_attach_hide_hide"
+        motion:constraintSetEnd="@id/land_full_expand_overlay_hide_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : land
+    view                : full
+    player              : expand
+    bottom(position)    : attach <-> overlay
+    bottom(visible)     : hide
+    menu                : show
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/land_full_expand_attach_hide_show_to_land_full_expand_overlay_hide_show"
+        motion:constraintSetStart="@id/land_full_expand_attach_hide_show"
+        motion:constraintSetEnd="@id/land_full_expand_overlay_hide_show"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" />
+    <!--*****************************************************************************************-->
+    <!-- 하단 영역 attach/overlay Transition End *************************************************-->
+    <!--*****************************************************************************************-->
+
+    <!--*****************************************************************************************-->
+    <!-- 하단 영역 show/hide Transition Start ****************************************************-->
+    <!--*****************************************************************************************-->
+    <!--
+    orientation         : port
+    view                : full
+    player              : base
+    bottom(position)    : attach
+    bottom(visible)     : show <-> hide
+    menu                : hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_base_attach_show_hide_to_port_full_base_attach_hide_hide"
+        motion:constraintSetStart="@id/port_full_base_attach_show_hide"
+        motion:constraintSetEnd="@id/port_full_base_attach_hide_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : port
+    view                : full
+    player              : base
+    bottom(position)    : attach
+    bottom(visible)     : show <-> hide
+    menu                : show
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_base_attach_show_show_to_port_full_base_attach_hide_show"
+        motion:constraintSetStart="@id/port_full_base_attach_show_show"
+        motion:constraintSetEnd="@id/port_full_base_attach_hide_show"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : port
+    view                : full
+    player              : base
+    bottom(position)    : overlay
+    bottom(visible)     : show <-> hide
+    menu                : hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_base_overlay_show_hide_to_port_full_base_overlay_hide_hide"
+        motion:constraintSetStart="@id/port_full_base_overlay_show_hide"
+        motion:constraintSetEnd="@id/port_full_base_overlay_hide_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : port
+    view                : full
+    player              : base
+    bottom(position)    : overlay
+    bottom(visible)     : show <-> hide
+    menu                : show
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_base_overlay_show_show_to_port_full_base_overlay_hide_show"
+        motion:constraintSetStart="@id/port_full_base_overlay_show_show"
+        motion:constraintSetEnd="@id/port_full_base_overlay_hide_show"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : port
+    view                : full
+    player              : collapse
+    bottom(position)    : attach
+    bottom(visible)     : show <-> hide
+    menu                : hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_collapse_attach_show_hide_to_port_full_collapse_attach_hide_hide"
+        motion:constraintSetStart="@id/port_full_collapse_attach_show_hide"
+        motion:constraintSetEnd="@id/port_full_collapse_attach_hide_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : port
+    view                : full
+    player              : collapse
+    bottom(position)    : attach
+    bottom(visible)     : show <-> hide
+    menu                : show
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_collapse_attach_show_show_to_port_full_collapse_attach_hide_show"
+        motion:constraintSetStart="@id/port_full_collapse_attach_show_show"
+        motion:constraintSetEnd="@id/port_full_collapse_attach_hide_show"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : port
+    view                : full
+    player              : collapse
+    bottom(position)    : overlay
+    bottom(visible)     : show <-> hide
+    menu                : hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_collapse_overlay_show_hide_to_port_full_collapse_overlay_hide_hide"
+        motion:constraintSetStart="@id/port_full_collapse_overlay_show_hide"
+        motion:constraintSetEnd="@id/port_full_collapse_overlay_hide_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : port
+    view                : full
+    player              : collapse
+    bottom(position)    : overlay
+    bottom(visible)     : show <-> hide
+    menu                : show
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_collapse_overlay_show_show_to_port_full_collapse_overlay_hide_show"
+        motion:constraintSetStart="@id/port_full_collapse_overlay_show_show"
+        motion:constraintSetEnd="@id/port_full_collapse_overlay_hide_show"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : port
+    view                : full
+    player              : expand
+    bottom(position)    : attach
+    bottom(visible)     : show <-> hide
+    menu                : hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_expand_attach_show_hide_to_port_full_expand_attach_hide_hide"
+        motion:constraintSetStart="@id/port_full_expand_attach_show_hide"
+        motion:constraintSetEnd="@id/port_full_expand_attach_hide_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : port
+    view                : full
+    player              : expand
+    bottom(position)    : attach
+    bottom(visible)     : show <-> hide
+    menu                : show
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_expand_attach_show_show_to_port_full_expand_attach_hide_show"
+        motion:constraintSetStart="@id/port_full_expand_attach_show_show"
+        motion:constraintSetEnd="@id/port_full_expand_attach_hide_show"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : port
+    view                : full
+    player              : expand
+    bottom(position)    : overlay
+    bottom(visible)     : show <-> hide
+    menu                : hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_expand_overlay_show_hide_to_port_full_expand_overlay_hide_hide"
+        motion:constraintSetStart="@id/port_full_expand_overlay_show_hide"
+        motion:constraintSetEnd="@id/port_full_expand_overlay_hide_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : port
+    view                : full
+    player              : expand
+    bottom(position)    : overlay
+    bottom(visible)     : show <-> hide
+    menu                : show
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_expand_overlay_show_show_to_port_full_expand_overlay_hide_show"
+        motion:constraintSetStart="@id/port_full_expand_overlay_show_show"
+        motion:constraintSetEnd="@id/port_full_expand_overlay_hide_show"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : land
+    view                : full
+    player              : base
+    bottom(position)    : attach
+    bottom(visible)     : show <-> hide
+    menu                : hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/land_full_base_attach_show_hide_to_land_full_base_attach_hide_hide"
+        motion:constraintSetStart="@id/land_full_base_attach_show_hide"
+        motion:constraintSetEnd="@id/land_full_base_attach_hide_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : land
+    view                : full
+    player              : base
+    bottom(position)    : attach
+    bottom(visible)     : show <-> hide
+    menu                : show
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/land_full_base_attach_show_show_to_land_full_base_attach_hide_show"
+        motion:constraintSetStart="@id/land_full_base_attach_show_show"
+        motion:constraintSetEnd="@id/land_full_base_attach_hide_show"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : land
+    view                : full
+    player              : base
+    bottom(position)    : overlay
+    bottom(visible)     : show <-> hide
+    menu                : hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/land_full_base_overlay_show_hide_to_land_full_base_overlay_hide_hide"
+        motion:constraintSetStart="@id/land_full_base_overlay_show_hide"
+        motion:constraintSetEnd="@id/land_full_base_overlay_hide_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : land
+    view                : full
+    player              : base
+    bottom(position)    : overlay
+    bottom(visible)     : show <-> hide
+    menu                : show
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/land_full_base_overlay_show_show_to_land_full_base_overlay_hide_show"
+        motion:constraintSetStart="@id/land_full_base_overlay_show_show"
+        motion:constraintSetEnd="@id/land_full_base_overlay_hide_show"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : land
+    view                : full
+    player              : collapse
+    bottom(position)    : attach
+    bottom(visible)     : show <-> hide
+    menu                : hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/land_full_collapse_attach_show_hide_to_land_full_collapse_attach_hide_hide"
+        motion:constraintSetStart="@id/land_full_collapse_attach_show_hide"
+        motion:constraintSetEnd="@id/land_full_collapse_attach_hide_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : land
+    view                : full
+    player              : collapse
+    bottom(position)    : attach
+    bottom(visible)     : show <-> hide
+    menu                : show
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/land_full_collapse_attach_show_show_to_land_full_collapse_attach_hide_show"
+        motion:constraintSetStart="@id/land_full_collapse_attach_show_show"
+        motion:constraintSetEnd="@id/land_full_collapse_attach_hide_show"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : land
+    view                : full
+    player              : collapse
+    bottom(position)    : overlay
+    bottom(visible)     : show <-> hide
+    menu                : hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/land_full_collapse_overlay_show_hide_to_land_full_collapse_overlay_hide_hide"
+        motion:constraintSetStart="@id/land_full_collapse_overlay_show_hide"
+        motion:constraintSetEnd="@id/land_full_collapse_overlay_hide_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : land
+    view                : full
+    player              : collapse
+    bottom(position)    : overlay
+    bottom(visible)     : show <-> hide
+    menu                : show
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/land_full_collapse_overlay_show_show_to_land_full_collapse_overlay_hide_show"
+        motion:constraintSetStart="@id/land_full_collapse_overlay_show_show"
+        motion:constraintSetEnd="@id/land_full_collapse_overlay_hide_show"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : land
+    view                : full
+    player              : expand
+    bottom(position)    : attach
+    bottom(visible)     : show <-> hide
+    menu                : hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/land_full_expand_attach_show_hide_to_land_full_expand_attach_hide_hide"
+        motion:constraintSetStart="@id/land_full_expand_attach_show_hide"
+        motion:constraintSetEnd="@id/land_full_expand_attach_hide_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : land
+    view                : full
+    player              : expand
+    bottom(position)    : attach
+    bottom(visible)     : show <-> hide
+    menu                : show
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/land_full_expand_attach_show_show_to_land_full_expand_attach_hide_show"
+        motion:constraintSetStart="@id/land_full_expand_attach_show_show"
+        motion:constraintSetEnd="@id/land_full_expand_attach_hide_show"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : land
+    view                : full
+    player              : expand
+    bottom(position)    : overlay
+    bottom(visible)     : show <-> hide
+    menu                : hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/land_full_expand_overlay_show_hide_to_land_full_expand_overlay_hide_hide"
+        motion:constraintSetStart="@id/land_full_expand_overlay_show_hide"
+        motion:constraintSetEnd="@id/land_full_expand_overlay_hide_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" />
+    <!--
+    orientation         : land
+    view                : full
+    player              : expand
+    bottom(position)    : overlay
+    bottom(visible)     : show <-> hide
+    menu                : show
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/land_full_expand_overlay_show_show_to_land_full_expand_overlay_hide_show"
+        motion:constraintSetStart="@id/land_full_expand_overlay_show_show"
+        motion:constraintSetEnd="@id/land_full_expand_overlay_hide_show"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" />
+    <!--*****************************************************************************************-->
+    <!-- 하단 영역 show/hide Transition End ******************************************************-->
+    <!--*****************************************************************************************-->
+
+    <!--*****************************************************************************************-->
+    <!-- 내부 pip 상태 변경에 대한 Transition Start ************************************************-->
+    <!--*****************************************************************************************-->
+    <!--
+    orientation         : port
+    view                : full <-> mini
+    player              : base
+    bottom(position)    : attach
+    bottom(visible)     : show
+    menu                : hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_base_attach_show_hide_to_port_mini_base_attach_show_hide"
+        motion:constraintSetStart="@id/port_full_base_attach_show_hide"
+        motion:constraintSetEnd="@id/port_mini_base_attach_show_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" >
+
+        <OnSwipe
+            motion:dragDirection="dragDown"
+            motion:touchAnchorId="@id/player_touch_area"
+            motion:touchAnchorSide="middle"
+            motion:onTouchUp="autoComplete"
+            motion:maxVelocity="@integer/motion_decelerate_velocity"
+            motion:maxAcceleration="@integer/motion_decelerate_acceleration" />
+    </Transition>
+    <!--
+    orientation         : port
+    view                : full <-> mini
+    player              : base
+    bottom(position)    : attach
+    bottom(visible)     : show
+    menu                : show <-> hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_base_attach_show_show_to_port_mini_base_attach_show_hide"
+        motion:constraintSetStart="@id/port_full_base_attach_show_show"
+        motion:constraintSetEnd="@id/port_mini_base_attach_show_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear">
+
+        <OnSwipe
+            motion:dragDirection="dragDown"
+            motion:touchAnchorId="@id/player_touch_area"
+            motion:touchAnchorSide="middle"
+            motion:onTouchUp="autoComplete"
+            motion:maxVelocity="@integer/motion_decelerate_velocity"
+            motion:maxAcceleration="@integer/motion_decelerate_acceleration" />
+    </Transition>
+    <!--
+    orientation         : port
+    view                : full <-> mini
+    player              : base
+    bottom(position)    : attach
+    bottom(visible)     : hide
+    menu                : hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_base_attach_hide_hide_to_port_mini_base_attach_hide_hide"
+        motion:constraintSetStart="@id/port_full_base_attach_hide_hide"
+        motion:constraintSetEnd="@id/port_mini_base_attach_hide_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" >
+
+        <OnSwipe
+            motion:dragDirection="dragDown"
+            motion:touchAnchorId="@id/player_touch_area"
+            motion:touchAnchorSide="middle"
+            motion:onTouchUp="autoComplete"
+            motion:maxVelocity="@integer/motion_decelerate_velocity"
+            motion:maxAcceleration="@integer/motion_decelerate_acceleration" />
+    </Transition>
+    <!--
+    orientation         : port
+    view                : full <-> mini
+    player              : base
+    bottom(position)    : attach
+    bottom(visible)     : hide
+    menu                : show <-> hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_base_attach_hide_show_to_port_mini_base_attach_hide_hide"
+        motion:constraintSetStart="@id/port_full_base_attach_hide_show"
+        motion:constraintSetEnd="@id/port_mini_base_attach_hide_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" >
+
+        <OnSwipe
+            motion:dragDirection="dragDown"
+            motion:touchAnchorId="@id/player_touch_area"
+            motion:touchAnchorSide="middle"
+            motion:onTouchUp="autoComplete"
+            motion:maxVelocity="@integer/motion_decelerate_velocity"
+            motion:maxAcceleration="@integer/motion_decelerate_acceleration" />
+    </Transition>
+    <!--
+    orientation         : port
+    view                : full <-> mini
+    player              : base
+    bottom(position)    : overlay
+    bottom(visible)     : show
+    menu                : hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_base_overlay_show_hide_to_port_mini_base_overlay_show_hide"
+        motion:constraintSetStart="@id/port_full_base_overlay_show_hide"
+        motion:constraintSetEnd="@id/port_mini_base_overlay_show_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" >
+
+        <OnSwipe
+            motion:dragDirection="dragDown"
+            motion:touchAnchorId="@id/player_touch_area"
+            motion:touchAnchorSide="middle"
+            motion:onTouchUp="autoComplete"
+            motion:maxVelocity="@integer/motion_decelerate_velocity"
+            motion:maxAcceleration="@integer/motion_decelerate_acceleration" />
+    </Transition>
+    <!--
+    orientation         : port
+    view                : full <-> mini
+    player              : base
+    bottom(position)    : overlay
+    bottom(visible)     : show
+    menu                : show <-> hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_base_overlay_show_show_to_port_mini_base_overlay_show_hide"
+        motion:constraintSetStart="@id/port_full_base_overlay_show_show"
+        motion:constraintSetEnd="@id/port_mini_base_overlay_show_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" >
+
+        <OnSwipe
+            motion:dragDirection="dragDown"
+            motion:touchAnchorId="@id/player_touch_area"
+            motion:touchAnchorSide="middle"
+            motion:onTouchUp="autoComplete"
+            motion:maxVelocity="@integer/motion_decelerate_velocity"
+            motion:maxAcceleration="@integer/motion_decelerate_acceleration" />
+    </Transition>
+    <!--
+    orientation         : port
+    view                : full <-> mini
+    player              : base
+    bottom(position)    : overlay
+    bottom(visible)     : hide
+    menu                : hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_base_overlay_hide_hide_to_port_mini_base_overlay_hide_hide"
+        motion:constraintSetStart="@id/port_full_base_overlay_hide_hide"
+        motion:constraintSetEnd="@id/port_mini_base_overlay_hide_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" >
+
+        <OnSwipe
+            motion:dragDirection="dragDown"
+            motion:touchAnchorId="@id/player_touch_area"
+            motion:touchAnchorSide="middle"
+            motion:onTouchUp="autoComplete"
+            motion:maxVelocity="@integer/motion_decelerate_velocity"
+            motion:maxAcceleration="@integer/motion_decelerate_acceleration" />
+    </Transition>
+    <!--
+    orientation         : port
+    view                : full <-> mini
+    player              : base
+    bottom(position)    : overlay
+    bottom(visible)     : hide
+    menu                : show <-> hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_base_overlay_hide_show_to_port_mini_base_overlay_hide_hide"
+        motion:constraintSetStart="@id/port_full_base_overlay_hide_show"
+        motion:constraintSetEnd="@id/port_mini_base_overlay_hide_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" >
+
+        <OnSwipe
+            motion:dragDirection="dragDown"
+            motion:touchAnchorId="@id/player_touch_area"
+            motion:touchAnchorSide="middle"
+            motion:onTouchUp="autoComplete"
+            motion:maxVelocity="@integer/motion_decelerate_velocity"
+            motion:maxAcceleration="@integer/motion_decelerate_acceleration" />
+    </Transition>
+    <!--
+    orientation         : port
+    view                : full <-> mini
+    player              : collapse
+    bottom(position)    : attach
+    bottom(visible)     : show
+    menu                : hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_collapse_attach_show_hide_to_port_mini_collapse_attach_show_hide"
+        motion:constraintSetStart="@id/port_full_collapse_attach_show_hide"
+        motion:constraintSetEnd="@id/port_mini_collapse_attach_show_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" >
+
+        <OnSwipe
+            motion:dragDirection="dragDown"
+            motion:touchAnchorId="@id/player_touch_area"
+            motion:touchAnchorSide="middle"
+            motion:onTouchUp="autoComplete"
+            motion:maxVelocity="@integer/motion_decelerate_velocity"
+            motion:maxAcceleration="@integer/motion_decelerate_acceleration" />
+    </Transition>
+    <!--
+    orientation         : port
+    view                : full <-> mini
+    player              : collapse
+    bottom(position)    : attach
+    bottom(visible)     : show
+    menu                : show <-> hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_collapse_attach_show_show_to_port_mini_collapse_attach_show_hide"
+        motion:constraintSetStart="@id/port_full_collapse_attach_show_show"
+        motion:constraintSetEnd="@id/port_mini_collapse_attach_show_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" >
+
+        <OnSwipe
+            motion:dragDirection="dragDown"
+            motion:touchAnchorId="@id/player_touch_area"
+            motion:touchAnchorSide="middle"
+            motion:onTouchUp="autoComplete"
+            motion:maxVelocity="@integer/motion_decelerate_velocity"
+            motion:maxAcceleration="@integer/motion_decelerate_acceleration" />
+    </Transition>
+    <!--
+    orientation         : port
+    view                : full <-> mini
+    player              : collapse
+    bottom(position)    : attach
+    bottom(visible)     : hide
+    menu                : hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_collapse_attach_hide_hide_to_port_mini_collapse_attach_hide_hide"
+        motion:constraintSetStart="@id/port_full_collapse_attach_hide_hide"
+        motion:constraintSetEnd="@id/port_mini_collapse_attach_hide_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" >
+
+        <OnSwipe
+            motion:dragDirection="dragDown"
+            motion:touchAnchorId="@id/player_touch_area"
+            motion:touchAnchorSide="middle"
+            motion:onTouchUp="autoComplete"
+            motion:maxVelocity="@integer/motion_decelerate_velocity"
+            motion:maxAcceleration="@integer/motion_decelerate_acceleration" />
+    </Transition>
+    <!--
+    orientation         : port
+    view                : full <-> mini
+    player              : collapse
+    bottom(position)    : attach
+    bottom(visible)     : hide
+    menu                : show <-> hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_collapse_attach_hide_show_to_port_mini_collapse_attach_hide_hide"
+        motion:constraintSetStart="@id/port_full_collapse_attach_hide_show"
+        motion:constraintSetEnd="@id/port_mini_collapse_attach_hide_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" >
+
+        <OnSwipe
+            motion:dragDirection="dragDown"
+            motion:touchAnchorId="@id/player_touch_area"
+            motion:touchAnchorSide="middle"
+            motion:onTouchUp="autoComplete"
+            motion:maxVelocity="@integer/motion_decelerate_velocity"
+            motion:maxAcceleration="@integer/motion_decelerate_acceleration" />
+    </Transition>
+    <!--
+    orientation         : port
+    view                : full <-> mini
+    player              : collapse
+    bottom(position)    : overlay
+    bottom(visible)     : show
+    menu                : hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_collapse_overlay_show_hide_to_port_mini_collapse_overlay_show_hide"
+        motion:constraintSetStart="@id/port_full_collapse_overlay_show_hide"
+        motion:constraintSetEnd="@id/port_mini_collapse_overlay_show_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" >
+
+        <OnSwipe
+            motion:dragDirection="dragDown"
+            motion:touchAnchorId="@id/player_touch_area"
+            motion:touchAnchorSide="middle"
+            motion:onTouchUp="autoComplete"
+            motion:maxVelocity="@integer/motion_decelerate_velocity"
+            motion:maxAcceleration="@integer/motion_decelerate_acceleration" />
+    </Transition>
+    <!--
+    orientation         : port
+    view                : full <-> mini
+    player              : collapse
+    bottom(position)    : overlay
+    bottom(visible)     : show
+    menu                : show <-> hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_collapse_overlay_show_show_to_port_mini_collapse_overlay_show_hide"
+        motion:constraintSetStart="@id/port_full_collapse_overlay_show_show"
+        motion:constraintSetEnd="@id/port_mini_collapse_overlay_show_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" >
+
+        <OnSwipe
+            motion:dragDirection="dragDown"
+            motion:touchAnchorId="@id/player_touch_area"
+            motion:touchAnchorSide="middle"
+            motion:onTouchUp="autoComplete"
+            motion:maxVelocity="@integer/motion_decelerate_velocity"
+            motion:maxAcceleration="@integer/motion_decelerate_acceleration" />
+    </Transition>
+    <!--
+    orientation         : port
+    view                : full <-> mini
+    player              : collapse
+    bottom(position)    : overlay
+    bottom(visible)     : hide
+    menu                : hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_collapse_overlay_hide_hide_to_port_mini_collapse_overlay_hide_hide"
+        motion:constraintSetStart="@id/port_full_collapse_overlay_hide_hide"
+        motion:constraintSetEnd="@id/port_mini_collapse_overlay_hide_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" >
+
+        <OnSwipe
+            motion:dragDirection="dragDown"
+            motion:touchAnchorId="@id/player_touch_area"
+            motion:touchAnchorSide="middle"
+            motion:onTouchUp="autoComplete"
+            motion:maxVelocity="@integer/motion_decelerate_velocity"
+            motion:maxAcceleration="@integer/motion_decelerate_acceleration" />
+    </Transition>
+    <!--
+    orientation         : port
+    view                : full <-> mini
+    player              : collapse
+    bottom(position)    : overlay
+    bottom(visible)     : hide
+    menu                : show <-> hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_collapse_overlay_hide_show_to_port_mini_collapse_overlay_hide_hide"
+        motion:constraintSetStart="@id/port_full_collapse_overlay_hide_show"
+        motion:constraintSetEnd="@id/port_mini_collapse_overlay_hide_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" >
+
+        <OnSwipe
+            motion:dragDirection="dragDown"
+            motion:touchAnchorId="@id/player_touch_area"
+            motion:touchAnchorSide="middle"
+            motion:onTouchUp="autoComplete"
+            motion:maxVelocity="@integer/motion_decelerate_velocity"
+            motion:maxAcceleration="@integer/motion_decelerate_acceleration" />
+    </Transition>
+    <!--
+    orientation         : port
+    view                : full <-> mini
+    player              : expand
+    bottom(position)    : attach
+    bottom(visible)     : show
+    menu                : hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_expand_attach_show_hide_to_port_mini_expand_attach_show_hide"
+        motion:constraintSetStart="@id/port_full_expand_attach_show_hide"
+        motion:constraintSetEnd="@id/port_mini_expand_attach_show_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" >
+
+        <OnSwipe
+            motion:dragDirection="dragDown"
+            motion:touchAnchorId="@id/player_touch_area"
+            motion:touchAnchorSide="middle"
+            motion:onTouchUp="autoComplete"
+            motion:maxVelocity="@integer/motion_decelerate_velocity"
+            motion:maxAcceleration="@integer/motion_decelerate_acceleration" />
+    </Transition>
+    <!--
+    orientation         : port
+    view                : full <-> mini
+    player              : expand
+    bottom(position)    : attach
+    bottom(visible)     : show
+    menu                : show <-> hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_expand_attach_show_show_to_port_mini_expand_attach_show_hide"
+        motion:constraintSetStart="@id/port_full_expand_attach_show_show"
+        motion:constraintSetEnd="@id/port_mini_expand_attach_show_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" >
+
+        <OnSwipe
+            motion:dragDirection="dragDown"
+            motion:touchAnchorId="@id/player_touch_area"
+            motion:touchAnchorSide="middle"
+            motion:onTouchUp="autoComplete"
+            motion:maxVelocity="@integer/motion_decelerate_velocity"
+            motion:maxAcceleration="@integer/motion_decelerate_acceleration" />
+    </Transition>
+    <!--
+    orientation         : port
+    view                : full <-> mini
+    player              : expand
+    bottom(position)    : attach
+    bottom(visible)     : hide
+    menu                : hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_expand_attach_hide_hide_to_port_mini_expand_attach_hide_hide"
+        motion:constraintSetStart="@id/port_full_expand_attach_hide_hide"
+        motion:constraintSetEnd="@id/port_mini_expand_attach_hide_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" >
+
+        <OnSwipe
+            motion:dragDirection="dragDown"
+            motion:touchAnchorId="@id/player_touch_area"
+            motion:touchAnchorSide="middle"
+            motion:onTouchUp="autoComplete"
+            motion:maxVelocity="@integer/motion_decelerate_velocity"
+            motion:maxAcceleration="@integer/motion_decelerate_acceleration" />
+    </Transition>
+    <!--
+    orientation         : port
+    view                : full <-> mini
+    player              : expand
+    bottom(position)    : attach
+    bottom(visible)     : hide
+    menu                : show <-> hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_expand_attach_hide_show_to_port_mini_expand_attach_hide_hide"
+        motion:constraintSetStart="@id/port_full_expand_attach_hide_show"
+        motion:constraintSetEnd="@id/port_mini_expand_attach_hide_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" >
+
+        <OnSwipe
+            motion:dragDirection="dragDown"
+            motion:touchAnchorId="@id/player_touch_area"
+            motion:touchAnchorSide="middle"
+            motion:onTouchUp="autoComplete"
+            motion:maxVelocity="@integer/motion_decelerate_velocity"
+            motion:maxAcceleration="@integer/motion_decelerate_acceleration" />
+    </Transition>
+    <!--
+    orientation         : port
+    view                : full <-> mini
+    player              : expand
+    bottom(position)    : overlay
+    bottom(visible)     : show
+    menu                : hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_expand_overlay_show_hide_to_port_mini_expand_overlay_show_hide"
+        motion:constraintSetStart="@id/port_full_expand_overlay_show_hide"
+        motion:constraintSetEnd="@id/port_mini_expand_overlay_show_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" >
+
+        <OnSwipe
+            motion:dragDirection="dragDown"
+            motion:touchAnchorId="@id/player_touch_area"
+            motion:touchAnchorSide="middle"
+            motion:onTouchUp="autoComplete"
+            motion:maxVelocity="@integer/motion_decelerate_velocity"
+            motion:maxAcceleration="@integer/motion_decelerate_acceleration" />
+    </Transition>
+    <!--
+    orientation         : port
+    view                : full <-> mini
+    player              : expand
+    bottom(position)    : overlay
+    bottom(visible)     : show
+    menu                : show <-> hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_expand_overlay_show_show_to_port_mini_expand_overlay_show_hide"
+        motion:constraintSetStart="@id/port_full_expand_overlay_show_show"
+        motion:constraintSetEnd="@id/port_mini_expand_overlay_show_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" >
+
+        <OnSwipe
+            motion:dragDirection="dragDown"
+            motion:touchAnchorId="@id/player_touch_area"
+            motion:touchAnchorSide="middle"
+            motion:onTouchUp="autoComplete"
+            motion:maxVelocity="@integer/motion_decelerate_velocity"
+            motion:maxAcceleration="@integer/motion_decelerate_acceleration" />
+    </Transition>
+    <!--
+    orientation         : port
+    view                : full <-> mini
+    player              : expand
+    bottom(position)    : overlay
+    bottom(visible)     : hide
+    menu                : hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_expand_overlay_hide_hide_to_port_mini_expand_overlay_hide_hide"
+        motion:constraintSetStart="@id/port_full_expand_overlay_hide_hide"
+        motion:constraintSetEnd="@id/port_mini_expand_overlay_hide_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" >
+
+        <OnSwipe
+            motion:dragDirection="dragDown"
+            motion:touchAnchorId="@id/player_touch_area"
+            motion:touchAnchorSide="middle"
+            motion:onTouchUp="autoComplete"
+            motion:maxVelocity="@integer/motion_decelerate_velocity"
+            motion:maxAcceleration="@integer/motion_decelerate_acceleration" />
+    </Transition>
+    <!--
+    orientation         : port
+    view                : full <-> mini
+    player              : expand
+    bottom(position)    : overlay
+    bottom(visible)     : hide
+    menu                : show <-> hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_expand_overlay_hide_show_to_port_mini_expand_overlay_hide_hide"
+        motion:constraintSetStart="@id/port_full_expand_overlay_hide_show"
+        motion:constraintSetEnd="@id/port_mini_expand_overlay_hide_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" >
+
+        <OnSwipe
+            motion:dragDirection="dragDown"
+            motion:touchAnchorId="@id/player_touch_area"
+            motion:touchAnchorSide="middle"
+            motion:onTouchUp="autoComplete"
+            motion:maxVelocity="@integer/motion_decelerate_velocity"
+            motion:maxAcceleration="@integer/motion_decelerate_acceleration" />
+    </Transition>
+    <!--
+    orientation         : land
+    view                : full <-> mini
+    player              : base
+    bottom(position)    : attach
+    bottom(visible)     : show
+    menu                : hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/land_full_base_attach_show_hide_to_land_mini_base_attach_show_hide"
+        motion:constraintSetStart="@id/land_full_base_attach_show_hide"
+        motion:constraintSetEnd="@id/land_mini_base_attach_show_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" >
+
+        <OnSwipe
+            motion:dragDirection="dragDown"
+            motion:touchAnchorId="@id/player_touch_area"
+            motion:touchAnchorSide="middle"
+            motion:onTouchUp="autoComplete"
+            motion:maxVelocity="@integer/motion_decelerate_velocity"
+            motion:maxAcceleration="@integer/motion_decelerate_acceleration" />
+    </Transition>
+    <!--
+    orientation         : land
+    view                : full <-> mini
+    player              : base
+    bottom(position)    : attach
+    bottom(visible)     : show
+    menu                : show <-> hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/land_full_base_attach_show_show_to_land_mini_base_attach_show_hide"
+        motion:constraintSetStart="@id/land_full_base_attach_show_show"
+        motion:constraintSetEnd="@id/land_mini_base_attach_show_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" >
+
+        <OnSwipe
+            motion:dragDirection="dragDown"
+            motion:touchAnchorId="@id/player_touch_area"
+            motion:touchAnchorSide="middle"
+            motion:onTouchUp="autoComplete"
+            motion:maxVelocity="@integer/motion_decelerate_velocity"
+            motion:maxAcceleration="@integer/motion_decelerate_acceleration" />
+    </Transition>
+    <!--
+    orientation         : land
+    view                : full <-> mini
+    player              : base
+    bottom(position)    : attach
+    bottom(visible)     : hide
+    menu                : hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/land_full_base_attach_hide_hide_to_land_mini_base_attach_hide_hide"
+        motion:constraintSetStart="@id/land_full_base_attach_hide_hide"
+        motion:constraintSetEnd="@id/land_mini_base_attach_hide_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" >
+
+        <OnSwipe
+            motion:dragDirection="dragDown"
+            motion:touchAnchorId="@id/player_touch_area"
+            motion:touchAnchorSide="middle"
+            motion:onTouchUp="autoComplete"
+            motion:maxVelocity="@integer/motion_decelerate_velocity"
+            motion:maxAcceleration="@integer/motion_decelerate_acceleration" />
+    </Transition>
+    <!--
+    orientation         : land
+    view                : full <-> mini
+    player              : base
+    bottom(position)    : attach
+    bottom(visible)     : hide
+    menu                : show <-> hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/land_full_base_attach_hide_show_to_land_mini_base_attach_hide_hide"
+        motion:constraintSetStart="@id/land_full_base_attach_hide_show"
+        motion:constraintSetEnd="@id/land_mini_base_attach_hide_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" >
+
+        <OnSwipe
+            motion:dragDirection="dragDown"
+            motion:touchAnchorId="@id/player_touch_area"
+            motion:touchAnchorSide="middle"
+            motion:onTouchUp="autoComplete"
+            motion:maxVelocity="@integer/motion_decelerate_velocity"
+            motion:maxAcceleration="@integer/motion_decelerate_acceleration" />
+    </Transition>
+    <!--
+    orientation         : land
+    view                : full <-> mini
+    player              : base
+    bottom(position)    : overlay
+    bottom(visible)     : show
+    menu                : hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/land_full_base_overlay_show_hide_to_land_mini_base_overlay_show_hide"
+        motion:constraintSetStart="@id/land_full_base_overlay_show_hide"
+        motion:constraintSetEnd="@id/land_mini_base_overlay_show_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" >
+
+        <OnSwipe
+            motion:dragDirection="dragDown"
+            motion:touchAnchorId="@id/player_touch_area"
+            motion:touchAnchorSide="middle"
+            motion:onTouchUp="autoComplete"
+            motion:maxVelocity="@integer/motion_decelerate_velocity"
+            motion:maxAcceleration="@integer/motion_decelerate_acceleration" />
+    </Transition>
+    <!--
+    orientation         : land
+    view                : full <-> mini
+    player              : base
+    bottom(position)    : overlay
+    bottom(visible)     : show
+    menu                : show <-> hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/land_full_base_overlay_show_show_to_land_mini_base_overlay_show_hide"
+        motion:constraintSetStart="@id/land_full_base_overlay_show_show"
+        motion:constraintSetEnd="@id/land_mini_base_overlay_show_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" >
+
+        <OnSwipe
+            motion:dragDirection="dragDown"
+            motion:touchAnchorId="@id/player_touch_area"
+            motion:touchAnchorSide="middle"
+            motion:onTouchUp="autoComplete"
+            motion:maxVelocity="@integer/motion_decelerate_velocity"
+            motion:maxAcceleration="@integer/motion_decelerate_acceleration" />
+    </Transition>
+    <!--
+    orientation         : land
+    view                : full <-> mini
+    player              : base
+    bottom(position)    : overlay
+    bottom(visible)     : hide
+    menu                : hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/land_full_base_overlay_hide_hide_to_land_mini_base_overlay_hide_hide"
+        motion:constraintSetStart="@id/land_full_base_overlay_hide_hide"
+        motion:constraintSetEnd="@id/land_mini_base_overlay_hide_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" >
+
+        <OnSwipe
+            motion:dragDirection="dragDown"
+            motion:touchAnchorId="@id/player_touch_area"
+            motion:touchAnchorSide="middle"
+            motion:onTouchUp="autoComplete"
+            motion:maxVelocity="@integer/motion_decelerate_velocity"
+            motion:maxAcceleration="@integer/motion_decelerate_acceleration" />
+    </Transition>
+    <!--
+    orientation         : land
+    view                : full <-> mini
+    player              : base
+    bottom(position)    : overlay
+    bottom(visible)     : hide
+    menu                : show <-> hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/land_full_base_overlay_hide_show_to_land_mini_base_overlay_hide_hide"
+        motion:constraintSetStart="@id/land_full_base_overlay_hide_show"
+        motion:constraintSetEnd="@id/land_mini_base_overlay_hide_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" >
+
+        <OnSwipe
+            motion:dragDirection="dragDown"
+            motion:touchAnchorId="@id/player_touch_area"
+            motion:touchAnchorSide="middle"
+            motion:onTouchUp="autoComplete"
+            motion:maxVelocity="@integer/motion_decelerate_velocity"
+            motion:maxAcceleration="@integer/motion_decelerate_acceleration" />
+    </Transition>
+    <!--
+    orientation         : land
+    view                : full <-> mini
+    player              : collapse
+    bottom(position)    : attach
+    bottom(visible)     : show
+    menu                : hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/land_full_collapse_attach_show_hide_to_land_mini_collapse_attach_show_hide"
+        motion:constraintSetStart="@id/land_full_collapse_attach_show_hide"
+        motion:constraintSetEnd="@id/land_mini_collapse_attach_show_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" >
+
+        <OnSwipe
+            motion:dragDirection="dragDown"
+            motion:touchAnchorId="@id/player_touch_area"
+            motion:touchAnchorSide="middle"
+            motion:onTouchUp="autoComplete"
+            motion:maxVelocity="@integer/motion_decelerate_velocity"
+            motion:maxAcceleration="@integer/motion_decelerate_acceleration" />
+    </Transition>
+    <!--
+    orientation         : land
+    view                : full <-> mini
+    player              : collapse
+    bottom(position)    : attach
+    bottom(visible)     : show
+    menu                : show <-> hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/land_full_collapse_attach_show_show_to_land_mini_collapse_attach_show_hide"
+        motion:constraintSetStart="@id/land_full_collapse_attach_show_show"
+        motion:constraintSetEnd="@id/land_mini_collapse_attach_show_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" >
+
+        <OnSwipe
+            motion:dragDirection="dragDown"
+            motion:touchAnchorId="@id/player_touch_area"
+            motion:touchAnchorSide="middle"
+            motion:onTouchUp="autoComplete"
+            motion:maxVelocity="@integer/motion_decelerate_velocity"
+            motion:maxAcceleration="@integer/motion_decelerate_acceleration" />
+    </Transition>
+    <!--
+    orientation         : land
+    view                : full <-> mini
+    player              : collapse
+    bottom(position)    : attach
+    bottom(visible)     : hide
+    menu                : hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/land_full_collapse_attach_hide_hide_to_land_mini_collapse_attach_hide_hide"
+        motion:constraintSetStart="@id/land_full_collapse_attach_hide_hide"
+        motion:constraintSetEnd="@id/land_mini_collapse_attach_hide_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" >
+
+        <OnSwipe
+            motion:dragDirection="dragDown"
+            motion:touchAnchorId="@id/player_touch_area"
+            motion:touchAnchorSide="middle"
+            motion:onTouchUp="autoComplete"
+            motion:maxVelocity="@integer/motion_decelerate_velocity"
+            motion:maxAcceleration="@integer/motion_decelerate_acceleration" />
+    </Transition>
+    <!--
+    orientation         : land
+    view                : full <-> mini
+    player              : collapse
+    bottom(position)    : attach
+    bottom(visible)     : hide
+    menu                : show <-> hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/land_full_collapse_attach_hide_show_to_land_mini_collapse_attach_hide_hide"
+        motion:constraintSetStart="@id/land_full_collapse_attach_hide_show"
+        motion:constraintSetEnd="@id/land_mini_collapse_attach_hide_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" >
+
+        <OnSwipe
+            motion:dragDirection="dragDown"
+            motion:touchAnchorId="@id/player_touch_area"
+            motion:touchAnchorSide="middle"
+            motion:onTouchUp="autoComplete"
+            motion:maxVelocity="@integer/motion_decelerate_velocity"
+            motion:maxAcceleration="@integer/motion_decelerate_acceleration" />
+    </Transition>
+    <!--
+    orientation         : land
+    view                : full <-> mini
+    player              : collapse
+    bottom(position)    : overlay
+    bottom(visible)     : show
+    menu                : hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/land_full_collapse_overlay_show_hide_to_land_mini_collapse_overlay_show_hide"
+        motion:constraintSetStart="@id/land_full_collapse_overlay_show_hide"
+        motion:constraintSetEnd="@id/land_mini_collapse_overlay_show_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" >
+
+        <OnSwipe
+            motion:dragDirection="dragDown"
+            motion:touchAnchorId="@id/player_touch_area"
+            motion:touchAnchorSide="middle"
+            motion:onTouchUp="autoComplete"
+            motion:maxVelocity="@integer/motion_decelerate_velocity"
+            motion:maxAcceleration="@integer/motion_decelerate_acceleration" />
+    </Transition>
+    <!--
+    orientation         : land
+    view                : full <-> mini
+    player              : collapse
+    bottom(position)    : overlay
+    bottom(visible)     : show
+    menu                : show <-> hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/land_full_collapse_overlay_show_show_to_land_mini_collapse_overlay_show_hide"
+        motion:constraintSetStart="@id/land_full_collapse_overlay_show_show"
+        motion:constraintSetEnd="@id/land_mini_collapse_overlay_show_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" >
+
+        <OnSwipe
+            motion:dragDirection="dragDown"
+            motion:touchAnchorId="@id/player_touch_area"
+            motion:touchAnchorSide="middle"
+            motion:onTouchUp="autoComplete"
+            motion:maxVelocity="@integer/motion_decelerate_velocity"
+            motion:maxAcceleration="@integer/motion_decelerate_acceleration" />
+    </Transition>
+    <!--
+    orientation         : land
+    view                : full <-> mini
+    player              : collapse
+    bottom(position)    : overlay
+    bottom(visible)     : hide
+    menu                : hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/land_full_collapse_overlay_hide_hide_to_land_mini_collapse_overlay_hide_hide"
+        motion:constraintSetStart="@id/land_full_collapse_overlay_hide_hide"
+        motion:constraintSetEnd="@id/land_mini_collapse_overlay_hide_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" >
+
+        <OnSwipe
+            motion:dragDirection="dragDown"
+            motion:touchAnchorId="@id/player_touch_area"
+            motion:touchAnchorSide="middle"
+            motion:onTouchUp="autoComplete"
+            motion:maxVelocity="@integer/motion_decelerate_velocity"
+            motion:maxAcceleration="@integer/motion_decelerate_acceleration" />
+    </Transition>
+    <!--
+    orientation         : land
+    view                : full <-> mini
+    player              : collapse
+    bottom(position)    : overlay
+    bottom(visible)     : hide
+    menu                : show <-> hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/land_full_collapse_overlay_hide_show_to_land_mini_collapse_overlay_hide_hide"
+        motion:constraintSetStart="@id/land_full_collapse_overlay_hide_show"
+        motion:constraintSetEnd="@id/land_mini_collapse_overlay_hide_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" >
+
+        <OnSwipe
+            motion:dragDirection="dragDown"
+            motion:touchAnchorId="@id/player_touch_area"
+            motion:touchAnchorSide="middle"
+            motion:onTouchUp="autoComplete"
+            motion:maxVelocity="@integer/motion_decelerate_velocity"
+            motion:maxAcceleration="@integer/motion_decelerate_acceleration" />
+    </Transition>
+    <!--
+    orientation         : land
+    view                : full <-> mini
+    player              : expand
+    bottom(position)    : attach
+    bottom(visible)     : show
+    menu                : hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/land_full_expand_attach_show_hide_to_land_mini_expand_attach_show_hide"
+        motion:constraintSetStart="@id/land_full_expand_attach_show_hide"
+        motion:constraintSetEnd="@id/land_mini_expand_attach_show_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" >
+
+        <OnSwipe
+            motion:dragDirection="dragDown"
+            motion:touchAnchorId="@id/player_touch_area"
+            motion:touchAnchorSide="middle"
+            motion:onTouchUp="autoComplete"
+            motion:maxVelocity="@integer/motion_decelerate_velocity"
+            motion:maxAcceleration="@integer/motion_decelerate_acceleration" />
+    </Transition>
+    <!--
+    orientation         : land
+    view                : full <-> mini
+    player              : expand
+    bottom(position)    : attach
+    bottom(visible)     : show
+    menu                : show <-> hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/land_full_expand_attach_show_show_to_land_mini_expand_attach_show_hide"
+        motion:constraintSetStart="@id/land_full_expand_attach_show_show"
+        motion:constraintSetEnd="@id/land_mini_expand_attach_show_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" >
+
+        <OnSwipe
+            motion:dragDirection="dragDown"
+            motion:touchAnchorId="@id/player_touch_area"
+            motion:touchAnchorSide="middle"
+            motion:onTouchUp="autoComplete"
+            motion:maxVelocity="@integer/motion_decelerate_velocity"
+            motion:maxAcceleration="@integer/motion_decelerate_acceleration" />
+    </Transition>
+    <!--
+    orientation         : land
+    view                : full <-> mini
+    player              : expand
+    bottom(position)    : attach
+    bottom(visible)     : hide
+    menu                : hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/land_full_expand_attach_hide_hide_to_land_mini_expand_attach_hide_hide"
+        motion:constraintSetStart="@id/land_full_expand_attach_hide_hide"
+        motion:constraintSetEnd="@id/land_mini_expand_attach_hide_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" >
+
+        <OnSwipe
+            motion:dragDirection="dragDown"
+            motion:touchAnchorId="@id/player_touch_area"
+            motion:touchAnchorSide="middle"
+            motion:onTouchUp="autoComplete"
+            motion:maxVelocity="@integer/motion_decelerate_velocity"
+            motion:maxAcceleration="@integer/motion_decelerate_acceleration" />
+    </Transition>
+    <!--
+    orientation         : land
+    view                : full <-> mini
+    player              : expand
+    bottom(position)    : attach
+    bottom(visible)     : hide
+    menu                : show <-> hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/land_full_expand_attach_hide_show_to_land_mini_expand_attach_hide_hide"
+        motion:constraintSetStart="@id/land_full_expand_attach_hide_show"
+        motion:constraintSetEnd="@id/land_mini_expand_attach_hide_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" >
+
+        <OnSwipe
+            motion:dragDirection="dragDown"
+            motion:touchAnchorId="@id/player_touch_area"
+            motion:touchAnchorSide="middle"
+            motion:onTouchUp="autoComplete"
+            motion:maxVelocity="@integer/motion_decelerate_velocity"
+            motion:maxAcceleration="@integer/motion_decelerate_acceleration" />
+    </Transition>
+    <!--
+    orientation         : land
+    view                : full <-> mini
+    player              : expand
+    bottom(position)    : overlay
+    bottom(visible)     : show
+    menu                : hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/land_full_expand_overlay_show_hide_to_land_mini_expand_overlay_show_hide"
+        motion:constraintSetStart="@id/land_full_expand_overlay_show_hide"
+        motion:constraintSetEnd="@id/land_mini_expand_overlay_show_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" >
+
+        <OnSwipe
+            motion:dragDirection="dragDown"
+            motion:touchAnchorId="@id/player_touch_area"
+            motion:touchAnchorSide="middle"
+            motion:onTouchUp="autoComplete"
+            motion:maxVelocity="@integer/motion_decelerate_velocity"
+            motion:maxAcceleration="@integer/motion_decelerate_acceleration" />
+    </Transition>
+    <!--
+    orientation         : land
+    view                : full <-> mini
+    player              : expand
+    bottom(position)    : overlay
+    bottom(visible)     : show
+    menu                : show <-> hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/land_full_expand_overlay_show_show_to_land_mini_expand_overlay_show_hide"
+        motion:constraintSetStart="@id/land_full_expand_overlay_show_show"
+        motion:constraintSetEnd="@id/land_mini_expand_overlay_show_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" >
+
+        <OnSwipe
+            motion:dragDirection="dragDown"
+            motion:touchAnchorId="@id/player_touch_area"
+            motion:touchAnchorSide="middle"
+            motion:onTouchUp="autoComplete"
+            motion:maxVelocity="@integer/motion_decelerate_velocity"
+            motion:maxAcceleration="@integer/motion_decelerate_acceleration" />
+    </Transition>
+    <!--
+    orientation         : land
+    view                : full <-> mini
+    player              : expand
+    bottom(position)    : overlay
+    bottom(visible)     : hide
+    menu                : hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/land_full_expand_overlay_hide_hide_to_land_mini_expand_overlay_hide_hide"
+        motion:constraintSetStart="@id/land_full_expand_overlay_hide_hide"
+        motion:constraintSetEnd="@id/land_mini_expand_overlay_hide_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" >
+
+        <OnSwipe
+            motion:dragDirection="dragDown"
+            motion:touchAnchorId="@id/player_touch_area"
+            motion:touchAnchorSide="middle"
+            motion:onTouchUp="autoComplete"
+            motion:maxVelocity="@integer/motion_decelerate_velocity"
+            motion:maxAcceleration="@integer/motion_decelerate_acceleration" />
+    </Transition>
+    <!--
+    orientation         : land
+    view                : full <-> mini
+    player              : expand
+    bottom(position)    : overlay
+    bottom(visible)     : hide
+    menu                : show <-> hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/land_full_expand_overlay_hide_show_to_land_mini_expand_overlay_hide_hide"
+        motion:constraintSetStart="@id/land_full_expand_overlay_hide_show"
+        motion:constraintSetEnd="@id/land_mini_expand_overlay_hide_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" >
+
+        <OnSwipe
+            motion:dragDirection="dragDown"
+            motion:touchAnchorId="@id/player_touch_area"
+            motion:touchAnchorSide="middle"
+            motion:onTouchUp="autoComplete"
+            motion:maxVelocity="@integer/motion_decelerate_velocity"
+            motion:maxAcceleration="@integer/motion_decelerate_acceleration" />
+    </Transition>
+    <!--*****************************************************************************************-->
+    <!-- 내부 pip 상태 변경에 대한 Transition End **************************************************-->
+    <!--*****************************************************************************************-->
+
+    <!--*****************************************************************************************-->
+    <!-- 9:16 영상 expand/collapse Transition Start **********************************************-->
+    <!--*****************************************************************************************-->
+    <!--
+    orientation         : port
+    view                : full
+    player              : expand <-> collapse
+    bottom(position)    : attach
+    bottom(visible)     : show
+    menu                : hide
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_expand_attach_show_hide_to_port_full_collapse_attach_show_hide"
+        motion:constraintSetStart="@id/port_full_expand_attach_show_hide"
+        motion:constraintSetEnd="@id/port_full_collapse_attach_show_hide"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" >
+
+        <OnSwipe
+            motion:dragDirection="dragUp"
+            motion:touchAnchorId="@id/player_touch_area"
+            motion:touchAnchorSide="middle"
+            motion:onTouchUp="autoComplete"
+            motion:maxVelocity="@integer/motion_decelerate_velocity"
+            motion:maxAcceleration="@integer/motion_decelerate_acceleration" />
+    </Transition>
+    <!--
+    orientation         : port
+    view                : full
+    player              : expand <-> collapse
+    bottom(position)    : attach
+    bottom(visible)     : show
+    menu                : show
+    close               : X
+    -->
+    <Transition
+        android:id="@+id/port_full_expand_attach_show_show_to_port_full_collapse_attach_show_show"
+        motion:constraintSetStart="@id/port_full_expand_attach_show_show"
+        motion:constraintSetEnd="@id/port_full_collapse_attach_show_show"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" >
+
+        <OnSwipe
+            motion:dragDirection="dragUp"
+            motion:touchAnchorId="@id/player_touch_area"
+            motion:touchAnchorSide="middle"
+            motion:onTouchUp="autoComplete"
+            motion:maxVelocity="@integer/motion_decelerate_velocity"
+            motion:maxAcceleration="@integer/motion_decelerate_acceleration" />
+    </Transition>
+    <!--*****************************************************************************************-->
+    <!-- 9:16 영상 expand/collapse Transition End ************************************************-->
+    <!--*****************************************************************************************-->
+
+    <!--*****************************************************************************************-->
+    <!-- 화면 종료에 대한 Transition Start *********************************************************-->
+    <!--*****************************************************************************************-->
+    <!--
+    orientation         : port
+    view                : mini
+    player              : base
+    bottom(position)    : attach
+    bottom(visible)     : show
+    menu                : hide
+    close               : X <-> O
+    -->
+    <Transition
+        android:id="@+id/port_mini_base_attach_show_hide_to_close"
+        motion:constraintSetStart="@id/port_mini_base_attach_show_hide"
+        motion:constraintSetEnd="@id/close"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" >
+
+        <OnSwipe
+            motion:dragDirection="dragDown"
+            motion:touchAnchorId="@id/player_touch_area"
+            motion:touchAnchorSide="middle"
+            motion:onTouchUp="autoComplete"
+            motion:maxVelocity="@integer/motion_decelerate_velocity"
+            motion:maxAcceleration="@integer/motion_decelerate_acceleration" />
+    </Transition>
+    <!--
+    orientation         : port
+    view                : mini
+    player              : base
+    bottom(position)    : attach
+    bottom(visible)     : hide
+    menu                : hide
+    close               : X <-> O
+    -->
+    <Transition
+        android:id="@+id/port_mini_base_attach_hide_hide_to_close"
+        motion:constraintSetStart="@id/port_mini_base_attach_hide_hide"
+        motion:constraintSetEnd="@id/close"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" >
+
+        <OnSwipe
+            motion:dragDirection="dragDown"
+            motion:touchAnchorId="@id/player_touch_area"
+            motion:touchAnchorSide="middle"
+            motion:onTouchUp="autoComplete"
+            motion:maxVelocity="@integer/motion_decelerate_velocity"
+            motion:maxAcceleration="@integer/motion_decelerate_acceleration" />
+    </Transition>
+    <!--
+    orientation         : port
+    view                : mini
+    player              : base
+    bottom(position)    : overlay
+    bottom(visible)     : show
+    menu                : hide
+    close               : X <-> O
+    -->
+    <Transition
+        android:id="@+id/port_mini_base_overlay_show_hide_to_close"
+        motion:constraintSetStart="@id/port_mini_base_overlay_show_hide"
+        motion:constraintSetEnd="@id/close"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" >
+
+        <OnSwipe
+            motion:dragDirection="dragDown"
+            motion:touchAnchorId="@id/player_touch_area"
+            motion:touchAnchorSide="middle"
+            motion:onTouchUp="autoComplete"
+            motion:maxVelocity="@integer/motion_decelerate_velocity"
+            motion:maxAcceleration="@integer/motion_decelerate_acceleration" />
+    </Transition>
+    <!--
+    orientation         : port
+    view                : mini
+    player              : base
+    bottom(position)    : overlay
+    bottom(visible)     : hide
+    menu                : hide
+    close               : X <-> O
+    -->
+    <Transition
+        android:id="@+id/port_mini_base_overlay_hide_hide_to_close"
+        motion:constraintSetStart="@id/port_mini_base_overlay_hide_hide"
+        motion:constraintSetEnd="@id/close"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" >
+
+        <OnSwipe
+            motion:dragDirection="dragDown"
+            motion:touchAnchorId="@id/player_touch_area"
+            motion:touchAnchorSide="middle"
+            motion:onTouchUp="autoComplete"
+            motion:maxVelocity="@integer/motion_decelerate_velocity"
+            motion:maxAcceleration="@integer/motion_decelerate_acceleration" />
+    </Transition>
+    <!--
+     orientation         : port
+     view                : mini
+     player              : collapse
+     bottom(position)    : attach
+     bottom(visible)     : show
+     menu                : hide
+     close               : X <-> O
+     -->
+    <Transition
+        android:id="@+id/port_mini_collapse_attach_show_hide_to_close"
+        motion:constraintSetStart="@id/port_mini_collapse_attach_show_hide"
+        motion:constraintSetEnd="@id/close"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" >
+
+        <OnSwipe
+            motion:dragDirection="dragDown"
+            motion:touchAnchorId="@id/player_touch_area"
+            motion:touchAnchorSide="middle"
+            motion:onTouchUp="autoComplete"
+            motion:maxVelocity="@integer/motion_decelerate_velocity"
+            motion:maxAcceleration="@integer/motion_decelerate_acceleration" />
+    </Transition>
+    <!--
+    orientation         : port
+    view                : mini
+    player              : collapse
+    bottom(position)    : attach
+    bottom(visible)     : hide
+    menu                : hide
+    close               : X <-> O
+    -->
+    <Transition
+        android:id="@+id/port_mini_collapse_attach_hide_hide_to_close"
+        motion:constraintSetStart="@id/port_mini_collapse_attach_hide_hide"
+        motion:constraintSetEnd="@id/close"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" >
+
+        <OnSwipe
+            motion:dragDirection="dragDown"
+            motion:touchAnchorId="@id/player_touch_area"
+            motion:touchAnchorSide="middle"
+            motion:onTouchUp="autoComplete"
+            motion:maxVelocity="@integer/motion_decelerate_velocity"
+            motion:maxAcceleration="@integer/motion_decelerate_acceleration" />
+    </Transition>
+    <!--
+    orientation         : port
+    view                : mini
+    player              : collapse
+    bottom(position)    : overlay
+    bottom(visible)     : show
+    menu                : hide
+    close               : X <-> O
+    -->
+    <Transition
+        android:id="@+id/port_mini_collapse_overlay_show_hide_to_close"
+        motion:constraintSetStart="@id/port_mini_collapse_overlay_show_hide"
+        motion:constraintSetEnd="@id/close"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" >
+
+        <OnSwipe
+            motion:dragDirection="dragDown"
+            motion:touchAnchorId="@id/player_touch_area"
+            motion:touchAnchorSide="middle"
+            motion:onTouchUp="autoComplete"
+            motion:maxVelocity="@integer/motion_decelerate_velocity"
+            motion:maxAcceleration="@integer/motion_decelerate_acceleration" />
+    </Transition>
+    <!--
+    orientation         : port
+    view                : mini
+    player              : collapse
+    bottom(position)    : overlay
+    bottom(visible)     : hide
+    menu                : hide
+    close               : X <-> O
+    -->
+    <Transition
+        android:id="@+id/port_mini_collapse_overlay_hide_hide_to_close"
+        motion:constraintSetStart="@id/port_mini_collapse_overlay_hide_hide"
+        motion:constraintSetEnd="@id/close"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" >
+
+        <OnSwipe
+            motion:dragDirection="dragDown"
+            motion:touchAnchorId="@id/player_touch_area"
+            motion:touchAnchorSide="middle"
+            motion:onTouchUp="autoComplete"
+            motion:maxVelocity="@integer/motion_decelerate_velocity"
+            motion:maxAcceleration="@integer/motion_decelerate_acceleration" />
+    </Transition>
+    <!--
+    orientation         : port
+    view                : mini
+    player              : expand
+    bottom(position)    : attach
+    bottom(visible)     : show
+    menu                : hide
+    close               : X <-> O
+    -->
+    <Transition
+        android:id="@+id/port_mini_expand_attach_show_hide_to_close"
+        motion:constraintSetStart="@id/port_mini_expand_attach_show_hide"
+        motion:constraintSetEnd="@id/close"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" >
+
+        <OnSwipe
+            motion:dragDirection="dragDown"
+            motion:touchAnchorId="@id/player_touch_area"
+            motion:touchAnchorSide="middle"
+            motion:onTouchUp="autoComplete"
+            motion:maxVelocity="@integer/motion_decelerate_velocity"
+            motion:maxAcceleration="@integer/motion_decelerate_acceleration" />
+    </Transition>
+    <!--
+    orientation         : port
+    view                : mini
+    player              : expand
+    bottom(position)    : attach
+    bottom(visible)     : hide
+    menu                : hide
+    close               : X <-> O
+    -->
+    <Transition
+        android:id="@+id/port_mini_expand_attach_hide_hide_to_close"
+        motion:constraintSetStart="@id/port_mini_expand_attach_hide_hide"
+        motion:constraintSetEnd="@id/close"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" >
+
+        <OnSwipe
+            motion:dragDirection="dragDown"
+            motion:touchAnchorId="@id/player_touch_area"
+            motion:touchAnchorSide="middle"
+            motion:onTouchUp="autoComplete"
+            motion:maxVelocity="@integer/motion_decelerate_velocity"
+            motion:maxAcceleration="@integer/motion_decelerate_acceleration" />
+    </Transition>
+    <!--
+    orientation         : port
+    view                : mini
+    player              : expand
+    bottom(position)    : overlay
+    bottom(visible)     : show
+    menu                : hide
+    close               : X <-> O
+    -->
+    <Transition
+        android:id="@+id/port_mini_expand_overlay_show_hide_to_close"
+        motion:constraintSetStart="@id/port_mini_expand_overlay_show_hide"
+        motion:constraintSetEnd="@id/close"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" >
+
+        <OnSwipe
+            motion:dragDirection="dragDown"
+            motion:touchAnchorId="@id/player_touch_area"
+            motion:touchAnchorSide="middle"
+            motion:onTouchUp="autoComplete"
+            motion:maxVelocity="@integer/motion_decelerate_velocity"
+            motion:maxAcceleration="@integer/motion_decelerate_acceleration" />
+    </Transition>
+    <!--
+    orientation         : port
+    view                : mini
+    player              : expand
+    bottom(position)    : overlay
+    bottom(visible)     : hide
+    menu                : hide
+    close               : X <-> O
+    -->
+    <Transition
+        android:id="@+id/port_mini_expand_overlay_hide_hide_to_close"
+        motion:constraintSetStart="@id/port_mini_expand_overlay_hide_hide"
+        motion:constraintSetEnd="@id/close"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" >
+
+        <OnSwipe
+            motion:dragDirection="dragDown"
+            motion:touchAnchorId="@id/player_touch_area"
+            motion:touchAnchorSide="middle"
+            motion:onTouchUp="autoComplete"
+            motion:maxVelocity="@integer/motion_decelerate_velocity"
+            motion:maxAcceleration="@integer/motion_decelerate_acceleration" />
+    </Transition>
+    <!--
+    orientation         : land
+    view                : mini
+    player              : base
+    bottom(position)    : attach
+    bottom(visible)     : show
+    menu                : hide
+    close               : X <-> O
+    -->
+    <Transition
+        android:id="@+id/land_mini_base_attach_show_hide_to_close"
+        motion:constraintSetStart="@id/land_mini_base_attach_show_hide"
+        motion:constraintSetEnd="@id/close"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" >
+
+        <OnSwipe
+            motion:dragDirection="dragDown"
+            motion:touchAnchorId="@id/player_touch_area"
+            motion:touchAnchorSide="middle"
+            motion:onTouchUp="autoComplete"
+            motion:maxVelocity="@integer/motion_decelerate_velocity"
+            motion:maxAcceleration="@integer/motion_decelerate_acceleration" />
+    </Transition>
+    <!--
+    orientation         : land
+    view                : mini
+    player              : base
+    bottom(position)    : attach
+    bottom(visible)     : hide
+    menu                : hide
+    close               : X <-> O
+    -->
+    <Transition
+        android:id="@+id/land_mini_base_attach_hide_hide_to_close"
+        motion:constraintSetStart="@id/land_mini_base_attach_hide_hide"
+        motion:constraintSetEnd="@id/close"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" >
+
+        <OnSwipe
+            motion:dragDirection="dragDown"
+            motion:touchAnchorId="@id/player_touch_area"
+            motion:touchAnchorSide="middle"
+            motion:onTouchUp="autoComplete"
+            motion:maxVelocity="@integer/motion_decelerate_velocity"
+            motion:maxAcceleration="@integer/motion_decelerate_acceleration" />
+    </Transition>
+    <!--
+    orientation         : land
+    view                : mini
+    player              : base
+    bottom(position)    : overlay
+    bottom(visible)     : show
+    menu                : hide
+    close               : X <-> O
+    -->
+    <Transition
+        android:id="@+id/land_mini_base_overlay_show_hide_to_close"
+        motion:constraintSetStart="@id/land_mini_base_overlay_show_hide"
+        motion:constraintSetEnd="@id/close"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" >
+
+        <OnSwipe
+            motion:dragDirection="dragDown"
+            motion:touchAnchorId="@id/player_touch_area"
+            motion:touchAnchorSide="middle"
+            motion:onTouchUp="autoComplete"
+            motion:maxVelocity="@integer/motion_decelerate_velocity"
+            motion:maxAcceleration="@integer/motion_decelerate_acceleration" />
+    </Transition>
+    <!--
+    orientation         : land
+    view                : mini
+    player              : base
+    bottom(position)    : overlay
+    bottom(visible)     : hide
+    menu                : hide
+    close               : X <-> O
+    -->
+    <Transition
+        android:id="@+id/land_mini_base_overlay_hide_hide_to_close"
+        motion:constraintSetStart="@id/land_mini_base_overlay_hide_hide"
+        motion:constraintSetEnd="@id/close"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" >
+
+        <OnSwipe
+            motion:dragDirection="dragDown"
+            motion:touchAnchorId="@id/player_touch_area"
+            motion:touchAnchorSide="middle"
+            motion:onTouchUp="autoComplete"
+            motion:maxVelocity="@integer/motion_decelerate_velocity"
+            motion:maxAcceleration="@integer/motion_decelerate_acceleration" />
+    </Transition>
+    <!--
+     orientation         : land
+     view                : mini
+     player              : collapse
+     bottom(position)    : attach
+     bottom(visible)     : show
+     menu                : hide
+     close               : X <-> O
+     -->
+    <Transition
+        android:id="@+id/land_mini_collapse_attach_show_hide_to_close"
+        motion:constraintSetStart="@id/land_mini_collapse_attach_show_hide"
+        motion:constraintSetEnd="@id/close"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" >
+
+        <OnSwipe
+            motion:dragDirection="dragDown"
+            motion:touchAnchorId="@id/player_touch_area"
+            motion:touchAnchorSide="middle"
+            motion:onTouchUp="autoComplete"
+            motion:maxVelocity="@integer/motion_decelerate_velocity"
+            motion:maxAcceleration="@integer/motion_decelerate_acceleration" />
+    </Transition>
+    <!--
+    orientation         : land
+    view                : mini
+    player              : collapse
+    bottom(position)    : attach
+    bottom(visible)     : hide
+    menu                : hide
+    close               : X <-> O
+    -->
+    <Transition
+        android:id="@+id/land_mini_collapse_attach_hide_hide_to_close"
+        motion:constraintSetStart="@id/land_mini_collapse_attach_hide_hide"
+        motion:constraintSetEnd="@id/close"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" >
+
+        <OnSwipe
+            motion:dragDirection="dragDown"
+            motion:touchAnchorId="@id/player_touch_area"
+            motion:touchAnchorSide="middle"
+            motion:onTouchUp="autoComplete"
+            motion:maxVelocity="@integer/motion_decelerate_velocity"
+            motion:maxAcceleration="@integer/motion_decelerate_acceleration" />
+    </Transition>
+    <!--
+    orientation         : land
+    view                : mini
+    player              : collapse
+    bottom(position)    : overlay
+    bottom(visible)     : show
+    menu                : hide
+    close               : X <-> O
+    -->
+    <Transition
+        android:id="@+id/land_mini_collapse_overlay_show_hide_to_close"
+        motion:constraintSetStart="@id/land_mini_collapse_overlay_show_hide"
+        motion:constraintSetEnd="@id/close"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" >
+
+        <OnSwipe
+            motion:dragDirection="dragDown"
+            motion:touchAnchorId="@id/player_touch_area"
+            motion:touchAnchorSide="middle"
+            motion:onTouchUp="autoComplete"
+            motion:maxVelocity="@integer/motion_decelerate_velocity"
+            motion:maxAcceleration="@integer/motion_decelerate_acceleration" />
+    </Transition>
+    <!--
+    orientation         : land
+    view                : mini
+    player              : collapse
+    bottom(position)    : overlay
+    bottom(visible)     : hide
+    menu                : hide
+    close               : X <-> O
+    -->
+    <Transition
+        android:id="@+id/land_mini_collapse_overlay_hide_hide_to_close"
+        motion:constraintSetStart="@id/land_mini_collapse_overlay_hide_hide"
+        motion:constraintSetEnd="@id/close"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" >
+
+        <OnSwipe
+            motion:dragDirection="dragDown"
+            motion:touchAnchorId="@id/player_touch_area"
+            motion:touchAnchorSide="middle"
+            motion:onTouchUp="autoComplete"
+            motion:maxVelocity="@integer/motion_decelerate_velocity"
+            motion:maxAcceleration="@integer/motion_decelerate_acceleration" />
+    </Transition>
+    <!--
+    orientation         : land
+    view                : mini
+    player              : expand
+    bottom(position)    : attach
+    bottom(visible)     : show
+    menu                : hide
+    close               : X <-> O
+    -->
+    <Transition
+        android:id="@+id/land_mini_expand_attach_show_hide_to_close"
+        motion:constraintSetStart="@id/land_mini_expand_attach_show_hide"
+        motion:constraintSetEnd="@id/close"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" >
+
+        <OnSwipe
+            motion:dragDirection="dragDown"
+            motion:touchAnchorId="@id/player_touch_area"
+            motion:touchAnchorSide="middle"
+            motion:onTouchUp="autoComplete"
+            motion:maxVelocity="@integer/motion_decelerate_velocity"
+            motion:maxAcceleration="@integer/motion_decelerate_acceleration" />
+    </Transition>
+    <!--
+    orientation         : land
+    view                : mini
+    player              : expand
+    bottom(position)    : attach
+    bottom(visible)     : hide
+    menu                : hide
+    close               : X <-> O
+    -->
+    <Transition
+        android:id="@+id/land_mini_expand_attach_hide_hide_to_close"
+        motion:constraintSetStart="@id/land_mini_expand_attach_hide_hide"
+        motion:constraintSetEnd="@id/close"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" >
+
+        <OnSwipe
+            motion:dragDirection="dragDown"
+            motion:touchAnchorId="@id/player_touch_area"
+            motion:touchAnchorSide="middle"
+            motion:onTouchUp="autoComplete"
+            motion:maxVelocity="@integer/motion_decelerate_velocity"
+            motion:maxAcceleration="@integer/motion_decelerate_acceleration" />
+    </Transition>
+    <!--
+    orientation         : land
+    view                : mini
+    player              : expand
+    bottom(position)    : overlay
+    bottom(visible)     : show
+    menu                : hide
+    close               : X <-> O
+    -->
+    <Transition
+        android:id="@+id/land_mini_expand_overlay_show_hide_to_close"
+        motion:constraintSetStart="@id/land_mini_expand_overlay_show_hide"
+        motion:constraintSetEnd="@id/close"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" >
+
+        <OnSwipe
+            motion:dragDirection="dragDown"
+            motion:touchAnchorId="@id/player_touch_area"
+            motion:touchAnchorSide="middle"
+            motion:onTouchUp="autoComplete"
+            motion:maxVelocity="@integer/motion_decelerate_velocity"
+            motion:maxAcceleration="@integer/motion_decelerate_acceleration" />
+    </Transition>
+    <!--
+    orientation         : land
+    view                : mini
+    player              : expand
+    bottom(position)    : overlay
+    bottom(visible)     : hide
+    menu                : hide
+    close               : X <-> O
+    -->
+    <Transition
+        android:id="@+id/land_mini_expand_overlay_hide_hide_to_close"
+        motion:constraintSetStart="@id/land_mini_expand_overlay_hide_hide"
+        motion:constraintSetEnd="@id/close"
+        motion:layoutDuringTransition="ignoreRequest"
+        motion:duration="@integer/material_motion_duration_long_1"
+        motion:motionInterpolator="linear" >
+
+        <OnSwipe
+            motion:dragDirection="dragDown"
+            motion:touchAnchorId="@id/player_touch_area"
+            motion:touchAnchorSide="middle"
+            motion:onTouchUp="autoComplete"
+            motion:maxVelocity="@integer/motion_decelerate_velocity"
+            motion:maxAcceleration="@integer/motion_decelerate_acceleration" />
+    </Transition>
+    <!--*****************************************************************************************-->
+    <!-- 화면 종료에 대한 Transition End ***********************************************************-->
+    <!--*****************************************************************************************-->
+
+
+    <!--*****************************************************************************************-->
+    <!-- 세로 화면 16:9 영상 ConstraintSet Start **************************************************-->
+    <!--*****************************************************************************************-->
+    <Include motion:constraintSet="@xml/motion_watch_port_full_base_attach_show_hide" />
+    <Include motion:constraintSet="@xml/motion_watch_port_full_base_attach_show_show" />
+    <Include motion:constraintSet="@xml/motion_watch_port_full_base_attach_hide_hide" />
+    <Include motion:constraintSet="@xml/motion_watch_port_full_base_attach_hide_show" />
+    <Include motion:constraintSet="@xml/motion_watch_port_full_base_overlay_show_hide" />
+    <Include motion:constraintSet="@xml/motion_watch_port_full_base_overlay_show_show" />
+    <Include motion:constraintSet="@xml/motion_watch_port_full_base_overlay_hide_hide" />
+    <Include motion:constraintSet="@xml/motion_watch_port_full_base_overlay_hide_show" />
+    <Include motion:constraintSet="@xml/motion_watch_port_mini_base_attach_show_hide" />
+    <Include motion:constraintSet="@xml/motion_watch_port_mini_base_attach_hide_hide" />
+    <Include motion:constraintSet="@xml/motion_watch_port_mini_base_overlay_show_hide" />
+    <Include motion:constraintSet="@xml/motion_watch_port_mini_base_overlay_hide_hide" />
+    <!--*****************************************************************************************-->
+    <!-- 세로 화면 16:9 영상 ConstraintSet End ****************************************************-->
+    <!--*****************************************************************************************-->
+
+    <!--*****************************************************************************************-->
+    <!-- 세로 화면 9:16 영상 ConstraintSet Start **************************************************-->
+    <!--*****************************************************************************************-->
+    <Include motion:constraintSet="@xml/motion_watch_port_full_collapse_attach_show_hide" />
+    <Include motion:constraintSet="@xml/motion_watch_port_full_collapse_attach_show_show" />
+    <Include motion:constraintSet="@xml/motion_watch_port_full_collapse_attach_hide_hide" />
+    <Include motion:constraintSet="@xml/motion_watch_port_full_collapse_attach_hide_show" />
+    <Include motion:constraintSet="@xml/motion_watch_port_full_collapse_overlay_show_hide" />
+    <Include motion:constraintSet="@xml/motion_watch_port_full_collapse_overlay_show_show" />
+    <Include motion:constraintSet="@xml/motion_watch_port_full_collapse_overlay_hide_hide" />
+    <Include motion:constraintSet="@xml/motion_watch_port_full_collapse_overlay_hide_show" />
+    <Include motion:constraintSet="@xml/motion_watch_port_full_expand_attach_show_hide" />
+    <Include motion:constraintSet="@xml/motion_watch_port_full_expand_attach_show_show" />
+    <Include motion:constraintSet="@xml/motion_watch_port_full_expand_attach_hide_hide" />
+    <Include motion:constraintSet="@xml/motion_watch_port_full_expand_attach_hide_show" />
+    <Include motion:constraintSet="@xml/motion_watch_port_full_expand_overlay_show_hide" />
+    <Include motion:constraintSet="@xml/motion_watch_port_full_expand_overlay_show_show" />
+    <Include motion:constraintSet="@xml/motion_watch_port_full_expand_overlay_hide_hide" />
+    <Include motion:constraintSet="@xml/motion_watch_port_full_expand_overlay_hide_show" />
+    <Include motion:constraintSet="@xml/motion_watch_port_mini_collapse_attach_show_hide" />
+    <Include motion:constraintSet="@xml/motion_watch_port_mini_collapse_attach_hide_hide" />
+    <Include motion:constraintSet="@xml/motion_watch_port_mini_collapse_overlay_show_hide" />
+    <Include motion:constraintSet="@xml/motion_watch_port_mini_collapse_overlay_hide_hide" />
+    <Include motion:constraintSet="@xml/motion_watch_port_mini_expand_attach_show_hide" />
+    <Include motion:constraintSet="@xml/motion_watch_port_mini_expand_attach_hide_hide" />
+    <Include motion:constraintSet="@xml/motion_watch_port_mini_expand_overlay_show_hide" />
+    <Include motion:constraintSet="@xml/motion_watch_port_mini_expand_overlay_hide_hide" />
+    <!--*****************************************************************************************-->
+    <!-- 세로 화면 9:16 영상 ConstraintSet End ****************************************************-->
+    <!--*****************************************************************************************-->
+
+    <!--*****************************************************************************************-->
+    <!-- 가로 화면 ConstraintSet Start ***********************************************************-->
+    <!--*****************************************************************************************-->
+    <Include motion:constraintSet="@xml/motion_watch_land_full_base_attach_show_hide" />
+    <Include motion:constraintSet="@xml/motion_watch_land_full_base_attach_show_show" />
+    <Include motion:constraintSet="@xml/motion_watch_land_full_base_attach_hide_hide" />
+    <Include motion:constraintSet="@xml/motion_watch_land_full_base_attach_hide_show" />
+    <Include motion:constraintSet="@xml/motion_watch_land_full_base_overlay_show_hide" />
+    <Include motion:constraintSet="@xml/motion_watch_land_full_base_overlay_show_show" />
+    <Include motion:constraintSet="@xml/motion_watch_land_full_base_overlay_hide_hide" />
+    <Include motion:constraintSet="@xml/motion_watch_land_full_base_overlay_hide_show" />
+    <Include motion:constraintSet="@xml/motion_watch_land_full_collapse_attach_show_hide" />
+    <Include motion:constraintSet="@xml/motion_watch_land_full_collapse_attach_show_show" />
+    <Include motion:constraintSet="@xml/motion_watch_land_full_collapse_attach_hide_hide" />
+    <Include motion:constraintSet="@xml/motion_watch_land_full_collapse_attach_hide_show" />
+    <Include motion:constraintSet="@xml/motion_watch_land_full_collapse_overlay_show_hide" />
+    <Include motion:constraintSet="@xml/motion_watch_land_full_collapse_overlay_show_show" />
+    <Include motion:constraintSet="@xml/motion_watch_land_full_collapse_overlay_hide_hide" />
+    <Include motion:constraintSet="@xml/motion_watch_land_full_collapse_overlay_hide_show" />
+    <Include motion:constraintSet="@xml/motion_watch_land_full_expand_attach_show_hide" />
+    <Include motion:constraintSet="@xml/motion_watch_land_full_expand_attach_show_show" />
+    <Include motion:constraintSet="@xml/motion_watch_land_full_expand_attach_hide_hide" />
+    <Include motion:constraintSet="@xml/motion_watch_land_full_expand_attach_hide_show" />
+    <Include motion:constraintSet="@xml/motion_watch_land_full_expand_overlay_show_hide" />
+    <Include motion:constraintSet="@xml/motion_watch_land_full_expand_overlay_show_show" />
+    <Include motion:constraintSet="@xml/motion_watch_land_full_expand_overlay_hide_hide" />
+    <Include motion:constraintSet="@xml/motion_watch_land_full_expand_overlay_hide_show" />
+    <Include motion:constraintSet="@xml/motion_watch_land_mini_base_attach_show_hide" />
+    <Include motion:constraintSet="@xml/motion_watch_land_mini_base_attach_hide_hide" />
+    <Include motion:constraintSet="@xml/motion_watch_land_mini_base_overlay_show_hide" />
+    <Include motion:constraintSet="@xml/motion_watch_land_mini_base_overlay_hide_hide" />
+    <Include motion:constraintSet="@xml/motion_watch_land_mini_collapse_attach_show_hide" />
+    <Include motion:constraintSet="@xml/motion_watch_land_mini_collapse_attach_hide_hide" />
+    <Include motion:constraintSet="@xml/motion_watch_land_mini_collapse_overlay_show_hide" />
+    <Include motion:constraintSet="@xml/motion_watch_land_mini_collapse_overlay_hide_hide" />
+    <Include motion:constraintSet="@xml/motion_watch_land_mini_expand_attach_show_hide" />
+    <Include motion:constraintSet="@xml/motion_watch_land_mini_expand_attach_hide_hide" />
+    <Include motion:constraintSet="@xml/motion_watch_land_mini_expand_overlay_show_hide" />
+    <Include motion:constraintSet="@xml/motion_watch_land_mini_expand_overlay_hide_hide" />
+    <!--*****************************************************************************************-->
+    <!-- 가로 화면 ConstraintSet End *************************************************************-->
+    <!--*****************************************************************************************-->
+
+    <!--*****************************************************************************************-->
+    <!-- 화면 종료 ConstraintSet Start ***********************************************************-->
+    <!--*****************************************************************************************-->
+    <Include motion:constraintSet="@xml/motion_watch_close" />
+    <!--*****************************************************************************************-->
+    <!-- 화면 종료 ConstraintSet End *************************************************************-->
+    <!--*****************************************************************************************-->
+</MotionScene>

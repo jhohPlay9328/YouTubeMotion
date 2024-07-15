@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/bind"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/information_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/COLOR_121318"
+        android:clickable="true"
+        android:focusable="true"
+        tools:background="@color/COLOR_121318">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/information_container_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:paddingTop="16dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="16dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/view_info_middle_divider" >
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="test"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/iv_profile"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:scaleType="centerCrop"
+                app:shapeAppearanceOverlay="@style/ShapeableImageView.CircleImage"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_title"
+                app:layout_constraintEnd_toStartOf="@id/tv_nickname"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_nickname"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="test"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="@id/iv_profile"
+                app:layout_constraintTop_toTopOf="@id/iv_profile"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/tv_viewer" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_viewer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="4dp"
+                android:text="10,000"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:drawableStart="@drawable/view_ic"
+                android:drawablePadding="2dp"
+                app:layout_constraintStart_toStartOf="@id/tv_nickname"
+                app:layout_constraintTop_toBottomOf="@id/tv_nickname"
+                app:layout_constraintEnd_toStartOf="@id/tv_thumbs_up"
+                app:layout_constraintBottom_toBottomOf="@id/iv_profile" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_thumbs_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="10,000"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:drawableStart="@drawable/thumbs_up"
+                android:drawablePadding="2dp"
+                app:layout_constraintStart_toEndOf="@id/tv_viewer"
+                app:layout_constraintTop_toBottomOf="@id/tv_nickname"
+                app:layout_constraintEnd_toStartOf="@id/tv_reg_data"
+                app:layout_constraintBottom_toBottomOf="@id/iv_profile" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_reg_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="4dp"
+                android:drawableStart="@drawable/clock_ic"
+                android:drawablePadding="2dp"
+                android:text="2014.07.14 09:00:00"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="@id/tv_thumbs_up"
+                app:layout_constraintTop_toBottomOf="@id/tv_nickname"
+                app:layout_constraintBottom_toBottomOf="@id/iv_profile" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/view_info_middle_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/COLOR_1B1D1F"
+            app:layout_constraintTop_toBottomOf="@id/information_container_top"
+            app:layout_constraintBottom_toTopOf="@id/information_container_bottom"
+            app:layout_constraintBottom_toBottomOf="parent"
+            bind:layout_editor_absoluteX="0dp" />
+
+        <HorizontalScrollView
+            android:id="@+id/information_container_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/view_info_middle_divider"
+            app:layout_constraintBottom_toTopOf="@id/view_info_bottom_divider" >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="16dp"
+                android:paddingTop="8dp"
+                android:paddingEnd="16dp"
+                android:paddingBottom="8dp"
+                android:splitMotionEvents="false" >
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/btn_thumbs_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:gravity="center"
+                    android:minWidth="40dp"
+                    android:orientation="vertical"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/btn_report"
+                    app:layout_constraintBottom_toBottomOf="parent" >
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/iv_thumbs_up"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/thumbs_up_big" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10,000"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/btn_report"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:gravity="center"
+                    android:minWidth="40dp"
+                    android:orientation="vertical"
+                    app:layout_constraintStart_toEndOf="@id/btn_thumbs_up"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/btn_block"
+                    app:layout_constraintBottom_toBottomOf="parent" >
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/iv_report"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/declare" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_report"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/watch_btn_report"
+                        android:textSize="12sp"
+                        android:textColor="@color/white" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/btn_block"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:gravity="center"
+                    android:minWidth="40dp"
+                    android:orientation="vertical"
+                    app:layout_constraintStart_toEndOf="@id/btn_report"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent" >
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/iv_block"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/block" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_block"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/watch_btn_block"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </HorizontalScrollView>
+
+        <View
+            android:id="@+id/view_info_bottom_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            app:layout_constraintTop_toBottomOf="@id/information_container_bottom"
+            app:layout_constraintBottom_toBottomOf="parent"
+            bind:layout_editor_absoluteX="0dp"
+            tools:background="@color/COLOR_1B1D1F"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+    <com.jh.oh.play.youtube.pip.ui.watch.PlayerRotationMotionLayout
+        android:id="@+id/player_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        app:layoutDescription="@xml/motion_player_rotation" >
+
+        <View
+            android:id="@+id/view_divider_rotation"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <!-- 영상 화면 Layout -->
+        <com.alexvasilkov.gestures.views.GestureFrameLayout
+            android:id="@+id/exo_player_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.media3.ui.PlayerView
+                android:id="@+id/exo_player_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/black"
+                app:surface_type="texture_view"
+                app:use_controller="false" />
+        </com.alexvasilkov.gestures.views.GestureFrameLayout>
+    </com.jh.oh.play.youtube.pip.ui.watch.PlayerRotationMotionLayout>
+</layout>

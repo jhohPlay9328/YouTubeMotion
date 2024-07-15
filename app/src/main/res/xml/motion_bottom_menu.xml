@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetStart="@+id/show_menu"
+        motion:constraintSetEnd="@+id/hide_menu"
+        motion:duration="300"
+        motion:motionInterpolator="linear"
+        motion:layoutDuringTransition="honorRequest" >
+    </Transition>
+
+    <ConstraintSet android:id="@+id/show_menu">
+        <Constraint
+            android:id="@id/ll_bottom_container"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bottom_navi_height"
+            motion:layout_constraintBottom_toBottomOf="parent" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/hide_menu">
+        <Constraint
+            android:id="@id/ll_bottom_container"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bottom_navi_height"
+            motion:layout_constraintTop_toBottomOf="parent" />
+    </ConstraintSet>
+</MotionScene>
