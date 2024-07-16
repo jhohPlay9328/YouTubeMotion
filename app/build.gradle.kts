@@ -59,7 +59,6 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-    androidTestImplementation(libs.androidx.ui.test.junit4)
 
     implementation(libs.androidx.constraintlayout)
     implementation(libs.timber)
